@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6q365q5fybf5"]
+
+[ext_resource type="PackedScene" uid="uid://bcwf0ftlpy34r" path="res://Assets/Decorations/buildings/blue/building_archeryrange_blue.gltf" id="1_o6i13"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_o6i13"]
+size = Vector2(50, 200)
+
+[node name="Decoration1" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_o6i13")
+
+[node name="building_archeryrange_blue2" parent="MeshInstance3D" instance=ExtResource("1_o6i13")]

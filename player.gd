@@ -1,0 +1,60 @@
+extends CharacterBody3D
+
+@export var MOVE_SPEED: float = 10
+var target_lane: int = 1
+var LANES: Array = [-4, 0, 4]
+var gravity_pull: float = 24
+var jump_velocity: float = 10
+var target_velocity: Vector3 = Vector3.ZERO
+var state: String = "run"
+
+signal hit
+
+func _ready():
+	pass
+	
+func _physics_process(delta: float) -> void:
+	
+	var direction: Vector3 = Vector3.ZERO
+
+	#Changing Lanes
+	if Input.is_action_just_pressed("ui_left") and target_lane > 0:
+		target_lane -= 1
+	if Input.is_action_just_pressed("ui_right") and target_lane < 2:
+		target_lane += 1
+	var target_x: float = LANES[target_lane]
+	var current_x: float = global_transform.origin.x
+	global_transform.origin.x = lerp(current_x, target_x, MOVE_SPEED * delta)
+	velocity = target_velocity
+		
+	#Controlling animations and GravityPull
+	if is_on_floor():
+		if state == "run":
+			$Ratknightgirl/AnimationPlayer.play("Run")
+		if state == "slide":
+			pass
+		if(target_velocity.y < -4):
+			target_velocity.y = -4
+	else:
+		target_velocity.y = target_velocity.y - (gravity_pull * delta)
+		$Ratknightgirl/AnimationPlayer.play("Jump")
+		
+	#Jumping
+	if Input.is_action_just_pressed("ui_up") && is_on_floor():
+		target_velocity.y = jump_velocity
+			
+	#CollisionDetection
+	for index in range(get_slide_collision_count()):
+		var collision = get_slide_collision(index)
+	for collision_index in get_slide_collision_count():
+		var collision = get_slide_collision(collision_index)
+		if collision.get_collider() == null:
+			continue
+		if collision.get_collider().is_in_group("blocks"):
+			hit.emit()
+
+	if (position.y > 0.3 and position.y < 5.56 and is_on_floor()):
+		target_velocity.z = -4
+	else:
+		target_velocity.z = 0
+	move_and_slide()

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3seu3qo7qgao"]
+
+[ext_resource type="PackedScene" uid="uid://dimusderi73o1" path="res://Assets/RatKnightGirl/RatknightgirlFinal.glb" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://c6dtefvt2mdxn" path="res://player.gd" id="1_onrkg"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4flbx"]
+radius = 0.217759
+height = 1.5
+
+[node name="Player" type="CharacterBody3D"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+collision_layer = 2
+collision_mask = 5
+script = ExtResource("1_onrkg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
+shape = SubResource("CapsuleShape3D_4flbx")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, 1.42256e-07, 8.11214e-08, 1.62243e-07, 0.927921, 0.372777, -2.22443e-08, 0.372777, -0.927921, -1.37185e-08, 2.83925, -3.47616)
+
+[node name="Ratknightgirl" parent="." instance=ExtResource("1_4flbx")]
