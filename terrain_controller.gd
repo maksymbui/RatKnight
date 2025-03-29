@@ -19,8 +19,6 @@ func _init_blocks() -> void:
 	for block_index in 2:
 		var block = terrain.instantiate()
 		
-		block.generate_decorations()
-		
 		#if block_index < 1:
 			#block.generate_empty()
 		#else:
@@ -30,6 +28,7 @@ func _init_blocks() -> void:
 			block.position.z = block.mesh.size.y/2
 		else:
 			append_to_edge(terrain_render[block_index -1], block)
+			
 		add_child(block)
 		terrain_render.append(block)
 
@@ -43,7 +42,6 @@ func _progress_terrain(delta: float):
 		var first_terrain = terrain_render.pop_front()
 		
 		var block = terrain.instantiate()
-		block.generate_decorations()
 		append_to_edge(last_terrain, block)
 		add_child(block)
 		terrain_render.append(block)
