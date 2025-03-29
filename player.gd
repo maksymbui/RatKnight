@@ -30,7 +30,7 @@ func _physics_process(delta: float) -> void:
 	#Controlling animations and GravityPull
 	if is_on_floor():
 		if state == "run":
-			$Ratknightgirl/AnimationPlayer.play("Run")
+			$Ratknightgirl/AnimationPlayer.play("WeaponRun")
 		if state == "slide":
 			pass
 		if(target_velocity.y < -4):

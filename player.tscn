@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b3seu3qo7qgao"]
 
-[ext_resource type="PackedScene" uid="uid://buavrxit4cugs" path="res://Assets/RatKnightGirl/RatknightgirlFinal.glb" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://c6dtefvt2mdxn" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="PackedScene" uid="uid://b5ks0qtcf3deo" path="res://Assets/RatKnightGirl/Ratknightgirl.glb" id="2_onrkg"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4flbx"]
 radius = 0.217759
@@ -20,4 +20,4 @@ shape = SubResource("CapsuleShape3D_4flbx")
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(-1, 1.42256e-07, 8.11214e-08, 1.62243e-07, 0.927921, 0.372777, -2.22443e-08, 0.372777, -0.927921, -1.37185e-08, 2.83925, -3.47616)
 
-[node name="Ratknightgirl" parent="." instance=ExtResource("1_4flbx")]
+[node name="Ratknightgirl" parent="." instance=ExtResource("2_onrkg")]

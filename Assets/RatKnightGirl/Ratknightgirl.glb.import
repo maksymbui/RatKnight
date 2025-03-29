@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://buavrxit4cugs"
-path="res://.godot/imported/RatknightgirlFinal.glb-60ed2f59bc4d74623881418b7a500aa3.scn"
+uid="uid://b5ks0qtcf3deo"
+path="res://.godot/imported/Ratknightgirl.glb-979cab893292c7f84aac87e28e6c4cb9.scn"
 
 [deps]
 
-source_file="res://Assets/RatKnightGirl/RatknightgirlFinal.glb"
-dest_files=["res://.godot/imported/RatknightgirlFinal.glb-60ed2f59bc4d74623881418b7a500aa3.scn"]
+source_file="res://Assets/RatKnightGirl/Ratknightgirl.glb"
+dest_files=["res://.godot/imported/Ratknightgirl.glb-979cab893292c7f84aac87e28e6c4cb9.scn"]
 
 [params]
 

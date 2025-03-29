@@ -207,7 +207,7 @@ transform = Transform3D(0.375047, 0, 6.25376, 0, 6.265, 0, -6.25376, 0, 0.375047
 transform = Transform3D(-0.17378, 0, 3.99622, 0, 4, 0, -3.99622, 0, -0.17378, -16.203, 0, 65.006)
 
 [node name="building_tower_catapult_blue3" parent="Houses" instance=ExtResource("25_d2w5b")]
-transform = Transform3D(-0.17378, 0, 3.99622, 0, 4, 0, -3.99622, 0, -0.17378, -16.203, 0, 51.4707)
+transform = Transform3D(-0.17378, 0, 3.99622, 0, 4, 0, -3.99622, 0, -0.17378, -16.203, 0, 51.8363)
 
 [node name="trees_A_medium2" parent="Houses" instance=ExtResource("26_d2w5b")]
 transform = Transform3D(4.765, 0, 0, 0, 4.765, 0, 0, 0, 4.765, -20.016, 0, 51.1731)

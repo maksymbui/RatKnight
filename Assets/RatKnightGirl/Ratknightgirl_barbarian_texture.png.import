@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0v7kthubv42x"
-path.s3tc="res://.godot/imported/RatknightgirlFinal_barbarian_texture.png-9e9515d2536bb36a7b6a0e40109c2408.s3tc.ctex"
+uid="uid://c3ox4q4j3wea5"
+path.s3tc="res://.godot/imported/Ratknightgirl_barbarian_texture.png-e2156d9372dd3b96c9639dbb9e56a1b7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Assets/RatKnightGirl/RatknightgirlFinal_barbarian_texture.png"
-dest_files=["res://.godot/imported/RatknightgirlFinal_barbarian_texture.png-9e9515d2536bb36a7b6a0e40109c2408.s3tc.ctex"]
+source_file="res://Assets/RatKnightGirl/Ratknightgirl_barbarian_texture.png"
+dest_files=["res://.godot/imported/Ratknightgirl_barbarian_texture.png-e2156d9372dd3b96c9639dbb9e56a1b7.s3tc.ctex"]
 
 [params]
 
