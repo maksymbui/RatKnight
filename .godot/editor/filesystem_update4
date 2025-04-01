@@ -1,10 +1,5 @@
-res://world.tscn
 res://player.tscn
-res://ratknightgirl_final.tscn
-res://terrain.gd
-res://terrain_controller.gd
+res://world.tscn
 res://terrain.tscn
 res://Decorations/Decoration1.tscn
-res://Assets/TilesLibrary.tres
-res://Decorations/Decoration2.tscn
-res://player.gd
+res://ratknightgirl.tscn
