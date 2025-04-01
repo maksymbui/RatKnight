@@ -20,4 +20,15 @@ shape = SubResource("CapsuleShape3D_4flbx")
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(-1, 1.42256e-07, 8.11214e-08, 1.62243e-07, 0.927921, 0.372777, -2.22443e-08, 0.372777, -0.927921, -1.37185e-08, 2.83925, -3.47616)
 
+[node name="Strafe" type="Timer" parent="."]
+wait_time = 0.45
+one_shot = true
+
 [node name="Ratknightgirl" parent="." instance=ExtResource("2_onrkg")]
+
+[node name="Attack" type="Timer" parent="."]
+wait_time = 0.86
+one_shot = true
+
+[connection signal="timeout" from="Strafe" to="." method="_on_strafe_timeout"]
+[connection signal="timeout" from="Attack" to="." method="_on_attack_timeout"]

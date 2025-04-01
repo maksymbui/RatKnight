@@ -3,3 +3,6 @@ res://world.tscn
 res://terrain.tscn
 res://Decorations/Decoration1.tscn
 res://ratknightgirl.tscn
+res://player.gd
+res://Decorations/Decoration2.tscn
+res://terrain_controller.tscn

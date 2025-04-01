@@ -10,17 +10,26 @@ var state: String = "run"
 
 signal hit
 
-func _ready():
-	pass
-	
 func _physics_process(delta: float) -> void:
-	
 	var direction: Vector3 = Vector3.ZERO
-
+	
+	if Input.is_action_just_pressed("ui_down"):
+		if state == "left" || state == "right":
+			$Strafe.stop()
+		state = "attack"
+		$Attack.start()
+	
 	#Changing Lanes
 	if Input.is_action_just_pressed("ui_left") and target_lane > 0:
+		if is_on_floor() && state != "attack":
+			state = "left"
+			$Strafe.start()
 		target_lane -= 1
+		
 	if Input.is_action_just_pressed("ui_right") and target_lane < 2:
+		if is_on_floor() && state != "attack":
+			state = "right"
+			$Strafe.start()
 		target_lane += 1
 	var target_x: float = LANES[target_lane]
 	var current_x: float = global_transform.origin.x
@@ -31,8 +40,12 @@ func _physics_process(delta: float) -> void:
 	if is_on_floor():
 		if state == "run":
 			$Ratknightgirl/AnimationPlayer.play("WeaponRun")
-		if state == "slide":
-			pass
+		if state == "left":
+			$Ratknightgirl/AnimationPlayer.play("Strafe Left")
+		if state == "right":
+			$Ratknightgirl/AnimationPlayer.play("StrafeRight")
+		if state == "attack":
+			$Ratknightgirl/AnimationPlayer.play("Attack")
 		if(target_velocity.y < -4):
 			target_velocity.y = -4
 	else:
@@ -58,3 +71,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		target_velocity.z = 0
 	move_and_slide()
+
+func _on_strafe_timeout() -> void:
+	state = "run"
+
+func _on_attack_timeout() -> void:
+	state = "run"
