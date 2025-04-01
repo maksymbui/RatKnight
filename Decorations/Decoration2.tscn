@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://cdjxnxt51gri"]
+[gd_scene load_steps=37 format=3 uid="uid://dsweucnmabpn"]
 
 [ext_resource type="PackedScene" uid="uid://by113ncpboldi" path="res://Assets/Decorations/decoration/nature/hill_single_B.gltf" id="1_crw0l"]
 [ext_resource type="PackedScene" uid="uid://bnbbbgmfvcytf" path="res://Assets/Decorations/decoration/nature/hill_single_C.gltf" id="2_naqv5"]

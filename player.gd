@@ -13,7 +13,7 @@ signal hit
 func _physics_process(delta: float) -> void:
 	var direction: Vector3 = Vector3.ZERO
 	
-	if Input.is_action_just_pressed("ui_down"):
+	if Input.is_action_just_pressed("ui_down") && is_on_floor():
 		if state == "left" || state == "right":
 			$Strafe.stop()
 		state = "attack"

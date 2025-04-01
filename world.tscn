@@ -15,6 +15,7 @@ sky = SubResource("Sky_tlwt5")
 fog_enabled = true
 fog_mode = 1
 fog_light_color = Color(0.400933, 0.5914, 0.80723, 1)
+fog_density = 1.0
 fog_depth_begin = 35.0
 
 [node name="World" type="Node3D"]
