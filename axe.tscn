@@ -50,6 +50,6 @@ mesh = SubResource("ArrayMesh_7dw2v")
 skeleton = NodePath("")
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(-74.415, 1.9101e-07, 0, -1.12364e-05, -1.265, 0, 0, 0, 11.635, 0, 1.13514, 0)
+transform = Transform3D(-140, 3.17091e-07, 0, -2.11394e-05, -2.1, 0, 0, 0, 11.635, 0, 0.917493, 0)
 target_position = Vector3(0, 1, 0)
 collision_mask = 4
