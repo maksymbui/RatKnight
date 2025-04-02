@@ -1,9 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://cy7p2wfojhp18"]
+[gd_scene load_steps=18 format=3 uid="uid://cy7p2wfojhp18"]
 
 [ext_resource type="PackedScene" uid="uid://dwcqppagoj6tx" path="res://Assets/gltf/wallSingle_door.gltf.glb" id="1_o6i13"]
 [ext_resource type="PackedScene" uid="uid://dkofbcwa0vlxg" path="res://Assets/gltf/wall.gltf.glb" id="2_osrop"]
 [ext_resource type="PackedScene" uid="uid://docf804lqnnt" path="res://Assets/gltf/torchWall.gltf.glb" id="3_x8sx7"]
-[ext_resource type="PackedScene" uid="uid://be245pxisdpyb" path="res://enemy.tscn" id="4_h47gt"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_207og"]
 albedo_color = Color(0.137255, 0.180392, 0.239216, 1)
@@ -140,14 +139,15 @@ size = Vector2(70.135, 200)
 [sub_resource type="BoxShape3D" id="BoxShape3D_h47gt"]
 size = Vector3(6, 1, 200)
 
-[sub_resource type="BoxMesh" id="BoxMesh_edsph"]
-size = Vector3(0.1, 0.1, 200)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h47gt"]
+albedo_color = Color(0.635294, 0.498039, 1, 1)
 
-[sub_resource type="BoxMesh" id="BoxMesh_adugk"]
-size = Vector3(0.1, 0.1, 200)
+[sub_resource type="PlaneMesh" id="PlaneMesh_7anpw"]
+material = SubResource("StandardMaterial3D_h47gt")
+size = Vector2(3, 200)
 
-[sub_resource type="BoxMesh" id="BoxMesh_wk64u"]
-size = Vector3(0.1, 0.1, 200)
+[sub_resource type="PlaneMesh" id="PlaneMesh_207og"]
+size = Vector2(3, 200)
 
 [node name="Decoration1" type="Node3D"]
 
@@ -312,14 +312,13 @@ omni_attenuation = 0.101
 [node name="Lines" type="Node3D" parent="."]
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Lines"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
-mesh = SubResource("BoxMesh_edsph")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 0)
+mesh = SubResource("PlaneMesh_7anpw")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Lines"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
-mesh = SubResource("BoxMesh_adugk")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.01, 0)
+mesh = SubResource("PlaneMesh_207og")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="Lines"]
-mesh = SubResource("BoxMesh_wk64u")
-
-[node name="Enemy" parent="." instance=ExtResource("4_h47gt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.01, 0)
+mesh = SubResource("PlaneMesh_207og")

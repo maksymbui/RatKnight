@@ -40,14 +40,15 @@ albedo_color = Color(0.415686, 0.517647, 0.211765, 1)
 material = SubResource("StandardMaterial3D_207og")
 size = Vector2(50, 200)
 
-[sub_resource type="BoxMesh" id="BoxMesh_edsph"]
-size = Vector3(0.1, 0.1, 200)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_naqv5"]
+albedo_color = Color(0.635294, 0.498039, 1, 1)
 
-[sub_resource type="BoxMesh" id="BoxMesh_adugk"]
-size = Vector3(0.1, 0.1, 200)
+[sub_resource type="PlaneMesh" id="PlaneMesh_wjubi"]
+material = SubResource("StandardMaterial3D_naqv5")
+size = Vector2(3, 200)
 
-[sub_resource type="BoxMesh" id="BoxMesh_wk64u"]
-size = Vector3(0.1, 0.1, 200)
+[sub_resource type="PlaneMesh" id="PlaneMesh_i6h1o"]
+size = Vector2(3, 200)
 
 [node name="Decoration1" type="Node3D"]
 
@@ -300,15 +301,22 @@ transform = Transform3D(2.72764, 0, -1.90148, 0, 3.325, 0, 1.90148, 0, 2.72764, 
 [node name="building_windmill_blue2" parent="Houses" instance=ExtResource("31_pswdp")]
 transform = Transform3D(7.02672, 0, -5.12135, 0, 8.695, 0, 5.12135, 0, 7.02672, 17.7175, 0, -29.0047)
 
+[node name="Enemy" parent="." instance=ExtResource("32_naqv5")]
+
+[node name="Enemy2" parent="." instance=ExtResource("32_naqv5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="Enemy3" parent="." instance=ExtResource("32_naqv5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
-mesh = SubResource("BoxMesh_edsph")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 0)
+mesh = SubResource("PlaneMesh_wjubi")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
-mesh = SubResource("BoxMesh_adugk")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.01, 0)
+mesh = SubResource("PlaneMesh_i6h1o")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
-mesh = SubResource("BoxMesh_wk64u")
-
-[node name="Enemy" parent="." instance=ExtResource("32_naqv5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.01, 0)
+mesh = SubResource("PlaneMesh_i6h1o")

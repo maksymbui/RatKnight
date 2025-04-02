@@ -43,6 +43,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_7ccxr")
 
 [node name="Axe" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.431418, 0)
 
 [node name="axe_2handed" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.367674, 0)
@@ -50,6 +51,6 @@ mesh = SubResource("ArrayMesh_7dw2v")
 skeleton = NodePath("")
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(-140, 3.17091e-07, 0, -2.11394e-05, -2.1, 0, 0, 0, 11.635, 0, 0.917493, 0)
+transform = Transform3D(-73.985, 1.52506e-07, 0, -1.11714e-05, -1.01, 0, 0, 0, 11.635, 0, 0.917493, 0)
 target_position = Vector3(0, 1, 0)
 collision_mask = 4

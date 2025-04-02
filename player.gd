@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 @export var MOVE_SPEED: float = 10
 var target_lane: int = 1
-var LANES: Array = [-2, 0, 2]
+var LANES: Array = [-3, 0, 3]
 var gravity_pull: float = 24
 var jump_velocity: float = 10
 var target_velocity: Vector3 = Vector3.ZERO
@@ -11,8 +11,8 @@ var state: String = "run"
 signal hit
 
 func _physics_process(delta: float) -> void:
-	var direction: Vector3 = Vector3.ZERO
-
+	var direction: Vector3 = Vector3.ZERO	
+	
 	if state == "stop":
 		$AnimationPlayer.pause()
 	
@@ -27,13 +27,13 @@ func _physics_process(delta: float) -> void:
 
 		#Changing Lanes
 		if Input.is_action_just_pressed("ui_left") and target_lane > 0:
-			if is_on_floor() && state != "attack":
+			if is_on_floor():
 				state = "left"
 				$Strafe.start()
 			target_lane -= 1
 			
 		if Input.is_action_just_pressed("ui_right") and target_lane < 2:
-			if is_on_floor() && state != "attack":
+			if is_on_floor():
 				state = "right"
 				$Strafe.start()
 			target_lane += 1
@@ -98,7 +98,6 @@ func _on_strafe_timeout() -> void:
 func _on_attack_timeout() -> void:
 	gravity_pull = 24
 	state = "run"
-
-
+	
 func _on_axe_hit() -> void:
 	print("Hitted Enemy") # Replace with function body.
