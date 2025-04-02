@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://dsweucnmabpn"]
+[gd_scene load_steps=38 format=3 uid="uid://cawcgbjltupgl"]
 
 [ext_resource type="PackedScene" uid="uid://by113ncpboldi" path="res://Assets/Decorations/decoration/nature/hill_single_B.gltf" id="1_crw0l"]
 [ext_resource type="PackedScene" uid="uid://bnbbbgmfvcytf" path="res://Assets/Decorations/decoration/nature/hill_single_C.gltf" id="2_naqv5"]
@@ -31,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://223jyuppc6cg" path="res://Assets/Decorations/decoration/nature/trees_B_small.gltf" id="29_ok3t7"]
 [ext_resource type="PackedScene" uid="uid://srapof3a1a7m" path="res://Assets/Decorations/decoration/nature/trees_B_large.gltf" id="30_s7un4"]
 [ext_resource type="PackedScene" uid="uid://b8r8tb1s4oo6y" path="res://Assets/Decorations/buildings/blue/building_windmill_blue.gltf" id="31_pswdp"]
+[ext_resource type="PackedScene" uid="uid://be245pxisdpyb" path="res://enemy.tscn" id="32_naqv5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_207og"]
 albedo_color = Color(0.415686, 0.517647, 0.211765, 1)
@@ -309,3 +310,5 @@ mesh = SubResource("BoxMesh_adugk")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_wk64u")
+
+[node name="Enemy" parent="." instance=ExtResource("32_naqv5")]

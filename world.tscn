@@ -12,9 +12,10 @@ sky_material = SubResource("ProceduralSkyMaterial_fj7yv")
 [sub_resource type="Environment" id="Environment_aqk2v"]
 background_mode = 2
 sky = SubResource("Sky_tlwt5")
+ambient_light_color = Color(0.0504923, 0.152657, 0.23261, 1)
 fog_enabled = true
 fog_mode = 1
-fog_light_color = Color(0.400933, 0.5914, 0.80723, 1)
+fog_light_color = Color(0.0466152, 0.111095, 0.182493, 1)
 fog_density = 1.0
 fog_depth_begin = 35.0
 
@@ -25,11 +26,18 @@ script = ExtResource("1_f3sb7")
 environment = SubResource("Environment_aqk2v")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.900763, -0.434261, 0.00661749, 0.0308008, -0.0486749, 0.99834, -0.433218, 0.899471, 0.0572202, 0, 3.95467, 0)
+transform = Transform3D(-0.900763, -0.434261, 0.00661772, -0.322793, 0.67959, 0.658759, -0.29057, 0.591248, -0.752325, 0, 3.95467, 0)
+light_color = Color(1, 0.745098, 0.501961, 1)
 shadow_enabled = true
 shadow_transmittance_bias = 1.0
+directional_shadow_blend_splits = true
 
 [node name="Player" parent="." instance=ExtResource("2_fj7yv")]
 transform = Transform3D(-1.25, 0, -1.88745e-07, 0, 1.25, 0, 1.88745e-07, 0, -1.25, 0, 0, 0)
 
 [node name="TerrainController" parent="." instance=ExtResource("3_tlwt5")]
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="hit" from="Player" to="." method="_on_player_hit"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

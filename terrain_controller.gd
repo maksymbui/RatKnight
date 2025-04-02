@@ -2,7 +2,7 @@ extends Node3D
 
 @export var terrain :PackedScene
 var terrain_render: Array[MeshInstance3D] = []
-var terrain_velocity: float = 10
+var terrain_velocity: float = 20
 var active: bool = true
 
 func _ready() -> void:

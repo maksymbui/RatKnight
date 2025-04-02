@@ -1,8 +1,10 @@
 res://world.tscn
-res://ratknightgirl.tscn
+res://axe.tscn
+res://axe.gd
 res://player.tscn
-res://terrain_controller.tscn
-res://Decorations/Decoration1.tscn
-res://terrain.tscn
-res://Decorations/Decoration2.tscn
+res://enemy.gd
+res://enemy.tscn
+res://world.gd
 res://player.gd
+res://Decorations/Decoration1.tscn
+res://Decorations/Decoration2.tscn

@@ -1,8 +1,12 @@
-CSGBox3D
-MeshInstance3D
-AnimationTree
+RayCast3D
+CollisionShape3D
+Area3D
 Timer
+MeshInstance3D
+CharacterBody3D
+Node3D
 OmniLight3D
 GridMap
 CSGCylinder3D
-Node3D
+CSGBox3D
+AnimationTree

@@ -14,6 +14,7 @@ func load_decorations(target_path: String) -> void:
 func generate_decorations() -> void:
 	load_decorations(decorations_dir)
 	var decoration = load("res://Decorations/" + decorations.pick_random()).instantiate()
+	#var decoration = load("res://Decorations/Decoration1.tscn").instantiate()
 	add_child(decoration)
 	
 func generate_obstacles() -> void:

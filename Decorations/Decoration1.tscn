@@ -1,11 +1,144 @@
-[gd_scene load_steps=6 format=3 uid="uid://cp8yspydxlie4"]
+[gd_scene load_steps=19 format=3 uid="uid://cy7p2wfojhp18"]
+
+[ext_resource type="PackedScene" uid="uid://dwcqppagoj6tx" path="res://Assets/gltf/wallSingle_door.gltf.glb" id="1_o6i13"]
+[ext_resource type="PackedScene" uid="uid://dkofbcwa0vlxg" path="res://Assets/gltf/wall.gltf.glb" id="2_osrop"]
+[ext_resource type="PackedScene" uid="uid://docf804lqnnt" path="res://Assets/gltf/torchWall.gltf.glb" id="3_x8sx7"]
+[ext_resource type="PackedScene" uid="uid://be245pxisdpyb" path="res://enemy.tscn" id="4_h47gt"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_207og"]
-albedo_color = Color(0.768627, 0.517647, 0.211765, 1)
+albedo_color = Color(0.137255, 0.180392, 0.239216, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_o6i13"]
 material = SubResource("StandardMaterial3D_207og")
-size = Vector2(50, 200)
+size = Vector2(16, 200)
+
+[sub_resource type="Shader" id="Shader_unrgv"]
+code = "// NOTE: Shader automatically converted from Godot Engine 4.4.1.stable's StandardMaterial3D.
+
+shader_type spatial;
+render_mode blend_mix, depth_draw_always, cull_back, diffuse_burley, specular_schlick_ggx;
+
+uniform vec4 albedo : source_color;
+uniform sampler2D texture_albedo : source_color, filter_linear_mipmap, repeat_enable;
+uniform ivec2 albedo_texture_size;
+uniform float point_size : hint_range(0.1, 128.0, 0.1);
+
+uniform float roughness : hint_range(0.0, 1.0);
+uniform sampler2D texture_metallic : hint_default_white, filter_linear_mipmap, repeat_enable;
+uniform vec4 metallic_texture_channel;
+uniform sampler2D texture_roughness : hint_roughness_r, filter_linear_mipmap, repeat_enable;
+
+uniform float specular : hint_range(0.0, 1.0, 0.01);
+uniform float metallic : hint_range(0.0, 1.0, 0.01);
+
+uniform sampler2D texture_refraction : filter_linear_mipmap, repeat_enable;
+uniform float refraction : hint_range(-1.0, 1.0, 0.001);
+uniform vec4 refraction_texture_channel;
+uniform sampler2D screen_texture : hint_screen_texture, repeat_disable, filter_linear_mipmap;
+uniform sampler2D depth_texture : hint_depth_texture, repeat_disable, filter_nearest;
+
+uniform sampler2D texture_normal : hint_roughness_normal, filter_linear_mipmap, repeat_enable;
+uniform float normal_scale : hint_range(-16.0, 16.0);
+
+uniform vec3 uv1_scale;
+uniform vec3 uv1_offset;
+uniform vec3 uv2_scale;
+uniform vec3 uv2_offset;
+
+void vertex() {
+	UV = UV * uv1_scale.xy + uv1_offset.xy + TIME * 0.01;
+}
+
+void fragment() {
+	vec2 base_uv = UV;
+
+	vec4 albedo_tex = texture(texture_albedo, base_uv);
+	ALBEDO = albedo.rgb * albedo_tex.rgb;
+
+	float metallic_tex = dot(texture(texture_metallic, base_uv), metallic_texture_channel);
+	METALLIC = metallic_tex * metallic;
+	SPECULAR = specular;
+
+	vec4 roughness_texture_channel = vec4(1.0, 0.0, 0.0, 0.0);
+	float roughness_tex = dot(texture(texture_roughness, base_uv), roughness_texture_channel);
+	ROUGHNESS = roughness_tex * roughness;
+
+	// Normal Map: Enabled
+	NORMAL_MAP = texture(texture_normal, base_uv).rgb;
+	NORMAL_MAP_DEPTH = normal_scale;
+
+	// Refraction: Enabled (with normal map texture)
+	vec3 unpacked_normal = NORMAL_MAP;
+	unpacked_normal.xy = unpacked_normal.xy * 2.0 - 1.0;
+	unpacked_normal.z = sqrt(max(0.0, 1.0 - dot(unpacked_normal.xy, unpacked_normal.xy)));
+	vec3 ref_normal = normalize(mix(
+			NORMAL,
+			TANGENT * unpacked_normal.x + BINORMAL * unpacked_normal.y + NORMAL * unpacked_normal.z,
+			NORMAL_MAP_DEPTH));
+	vec2 ref_ofs = SCREEN_UV - ref_normal.xy * dot(texture(texture_refraction, base_uv), refraction_texture_channel) * refraction;
+
+	float ref_amount = 1.0 - albedo.a * albedo_tex.a;
+
+	float refraction_depth_tex = textureLod(depth_texture, ref_ofs, 0.0).r;
+	vec4 refraction_view_pos = INV_PROJECTION_MATRIX * vec4(SCREEN_UV * 2.0 - 1.0, refraction_depth_tex, 1.0);
+	refraction_view_pos.xyz /= refraction_view_pos.w;
+
+	// If the depth buffer is lower then the model's Z position, use the refracted UV, otherwise use the normal screen UV.
+	// At low depth differences, decrease refraction intensity to avoid sudden discontinuities.
+	EMISSION += textureLod(screen_texture, mix(SCREEN_UV, ref_ofs, smoothstep(0.0, 1.0, VERTEX.z - refraction_view_pos.z)), ROUGHNESS * 8.0).rgb * ref_amount * EXPOSURE;
+	ALBEDO *= 1.0 - ref_amount;
+	// Force transparency on the material (required for refraction).
+	ALPHA = 1.0;
+}
+"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_unrgv"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_o6i13"]
+seamless = true
+as_normal_map = true
+noise = SubResource("FastNoiseLite_unrgv")
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_osrop"]
+seamless = true
+as_normal_map = true
+noise = SubResource("FastNoiseLite_unrgv")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o6i13"]
+render_priority = 0
+shader = SubResource("Shader_unrgv")
+shader_parameter/albedo = Color(0, 0.729412, 0.729412, 0.505882)
+shader_parameter/albedo_texture_size = Vector2i(0, 0)
+shader_parameter/point_size = 1.0
+shader_parameter/roughness = 0.0
+shader_parameter/metallic_texture_channel = Vector4(1, 0, 0, 0)
+shader_parameter/specular = 0.5
+shader_parameter/metallic = 0.0
+shader_parameter/texture_refraction = SubResource("NoiseTexture2D_osrop")
+shader_parameter/refraction = 0.05
+shader_parameter/refraction_texture_channel = Vector4(1, 0, 0, 0)
+shader_parameter/texture_normal = SubResource("NoiseTexture2D_o6i13")
+shader_parameter/normal_scale = 1.0
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h47gt"]
+material = SubResource("ShaderMaterial_o6i13")
+size = Vector3(56.14, 1, 200)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x8sx7"]
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_x8sx7"]
+material = SubResource("StandardMaterial3D_x8sx7")
+size = Vector2(70.135, 200)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h47gt"]
+size = Vector3(6, 1, 200)
 
 [sub_resource type="BoxMesh" id="BoxMesh_edsph"]
 size = Vector3(0.1, 0.1, 200)
@@ -18,25 +151,175 @@ size = Vector3(0.1, 0.1, 200)
 
 [node name="Decoration1" type="Node3D"]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="Floor" type="MeshInstance3D" parent="."]
 mesh = SubResource("PlaneMesh_o6i13")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+[node name="Water" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.999995, 0, -0.00310668, 0, 1, 0, 0.00310668, 0, 0.999995, 0, -3.11254, 0)
+mesh = SubResource("BoxMesh_h47gt")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="Celling" type="MeshInstance3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 27.7744, 0)
+mesh = SubResource("PlaneMesh_x8sx7")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 29.4225, 0)
+shape = SubResource("BoxShape3D_h47gt")
+
+[node name="Walls" type="Node3D" parent="."]
+
+[node name="wallSingle_door_gltf" parent="Walls" instance=ExtResource("1_o6i13")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, -3.20813, 94.7474)
+
+[node name="wallSingle_door_gltf2" parent="Walls" instance=ExtResource("1_o6i13")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, -4, -100)
+
+[node name="wallSingle_door_gltf3" parent="Walls" instance=ExtResource("1_o6i13")]
+transform = Transform3D(-8, 0, -6.99382e-07, 0, 8, 0, 6.99382e-07, 0, -8, 0, -4, -100)
+
+[node name="wall_gltf" parent="Walls" instance=ExtResource("2_osrop")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -28.8217, -4.23213, -81.4994)
+
+[node name="wall_gltf2" parent="Walls" instance=ExtResource("2_osrop")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -28.8217, -4.23213, -49.5182)
+
+[node name="wall_gltf5" parent="Walls" instance=ExtResource("2_osrop")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -28.8217, -4.23213, 46.2659)
+
+[node name="wall_gltf6" parent="Walls" instance=ExtResource("2_osrop")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -28.8217, -4.23213, 78.2471)
+
+[node name="wall_gltf3" parent="Walls" instance=ExtResource("2_osrop")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -28.8217, -4.23213, -17.6961)
+
+[node name="wall_gltf4" parent="Walls" instance=ExtResource("2_osrop")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -28.8217, -4.23213, 14.2944)
+
+[node name="wall_gltf7" parent="Walls" instance=ExtResource("2_osrop")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, 28.82, -4.23213, -81.4994)
+
+[node name="wall_gltf8" parent="Walls" instance=ExtResource("2_osrop")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, 28.82, -4.23213, -49.5182)
+
+[node name="wall_gltf9" parent="Walls" instance=ExtResource("2_osrop")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, 28.82, -4.23213, 46.2659)
+
+[node name="wall_gltf10" parent="Walls" instance=ExtResource("2_osrop")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, 28.82, -4.23213, 78.2471)
+
+[node name="wall_gltf11" parent="Walls" instance=ExtResource("2_osrop")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, 28.82, -4.23213, -17.6961)
+
+[node name="wall_gltf12" parent="Walls" instance=ExtResource("2_osrop")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, 28.82, -4.23213, 14.2944)
+
+[node name="LightSide" type="Node3D" parent="."]
+
+[node name="torchWall_gltf" parent="LightSide" instance=ExtResource("3_x8sx7")]
+transform = Transform3D(-1.66322e-07, 0, 3.805, 0, 3.805, 0, -3.805, 0, -1.66322e-07, -23.6301, 9.59578, 0)
+
+[node name="torchWall_gltf2" parent="LightSide" instance=ExtResource("3_x8sx7")]
+transform = Transform3D(-1.66322e-07, 0, 3.805, 0, 3.805, 0, -3.805, 0, -1.66322e-07, -23.6301, 9.59578, 53.1519)
+
+[node name="torchWall_gltf3" parent="LightSide" instance=ExtResource("3_x8sx7")]
+transform = Transform3D(-1.66322e-07, 0, 3.805, 0, 3.805, 0, -3.805, 0, -1.66322e-07, -23.6301, 9.59578, -48.9271)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="LightSide"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -21.2413, 13.1166, 4.9738e-14)
+light_color = Color(1, 0.603922, 0.509804, 1)
+light_energy = 5.525
+light_indirect_energy = 8.475
+omni_range = 34.531
+omni_attenuation = 0.101
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="LightSide"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -21.2413, 13.1166, 53.2872)
+light_color = Color(1, 0.603922, 0.509804, 1)
+light_energy = 5.525
+light_indirect_energy = 8.475
+omni_range = 34.531
+omni_attenuation = 0.101
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="LightSide"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -21.2413, 13.1166, -49.058)
+light_color = Color(1, 0.603922, 0.509804, 1)
+light_energy = 5.525
+light_indirect_energy = 8.475
+omni_range = 34.531
+omni_attenuation = 0.101
+
+[node name="torchWall_gltf4" parent="LightSide" instance=ExtResource("3_x8sx7")]
+transform = Transform3D(4.98966e-07, 0, -3.805, 0, 3.805, 0, 3.805, 0, 4.98966e-07, 23.8678, 9.59578, -2.06581e-06)
+
+[node name="torchWall_gltf5" parent="LightSide" instance=ExtResource("3_x8sx7")]
+transform = Transform3D(4.98966e-07, 0, -3.805, 0, 3.805, 0, 3.805, 0, 4.98966e-07, 23.8678, 9.59578, -53.1519)
+
+[node name="torchWall_gltf6" parent="LightSide" instance=ExtResource("3_x8sx7")]
+transform = Transform3D(4.98966e-07, 0, -3.805, 0, 3.805, 0, 3.805, 0, 4.98966e-07, 23.8678, 9.59578, 48.9271)
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="LightSide"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 21.479, 13.1166, -1.85697e-06)
+light_color = Color(1, 0.603922, 0.509804, 1)
+light_energy = 5.525
+light_indirect_energy = 8.475
+omni_range = 34.531
+omni_attenuation = 0.101
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="LightSide"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 21.479, 13.1166, -53.2872)
+light_color = Color(1, 0.603922, 0.509804, 1)
+light_energy = 5.525
+light_indirect_energy = 8.475
+omni_range = 34.531
+omni_attenuation = 0.101
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="LightSide"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 21.479, 13.1166, 49.058)
+light_color = Color(1, 0.603922, 0.509804, 1)
+light_energy = 5.525
+light_indirect_energy = 8.475
+omni_range = 34.531
+omni_attenuation = 0.101
+
+[node name="LightFront" type="Node3D" parent="."]
+visible = false
+
+[node name="torchWall_gltf" parent="LightFront" instance=ExtResource("3_x8sx7")]
+transform = Transform3D(-0.413116, 0, 3.78251, 0, 3.805, 0, -3.78251, 0, -0.413116, -8.54588, 8.4548, 96.6853)
+
+[node name="torchWall_gltf2" parent="LightFront" instance=ExtResource("3_x8sx7")]
+transform = Transform3D(0.22228, 0, -3.7985, 0, 3.805, 0, 3.7985, 0, 0.22228, 8.44877, 8.74143, 98.0126)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="LightFront"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.23523, 11.8688, 96.1444)
+light_color = Color(1, 0.603922, 0.509804, 1)
+light_energy = 2.5
+light_indirect_energy = 8.475
+omni_range = 34.531
+omni_attenuation = 0.101
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="LightFront"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.78602, 12.3232, 98.1508)
+light_color = Color(1, 0.603922, 0.509804, 1)
+light_energy = 2.5
+light_indirect_energy = 8.475
+omni_range = 34.531
+omni_attenuation = 0.101
+
+[node name="Lines" type="Node3D" parent="."]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Lines"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
 mesh = SubResource("BoxMesh_edsph")
 
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Lines"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
 mesh = SubResource("BoxMesh_adugk")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Lines"]
 mesh = SubResource("BoxMesh_wk64u")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
-size = Vector3(50, 20, 200)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.595947, 0)
-operation = 2
-size = Vector3(45, 19.1919, 200)
+[node name="Enemy" parent="." instance=ExtResource("4_h47gt")]

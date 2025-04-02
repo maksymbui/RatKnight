@@ -15,9 +15,17 @@ run/main_scene="uid://7i87o5egx8xe"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
+[display]
+
+window/vsync/vsync_mode=0
+
 [dotnet]
 
 project/assembly_name="0.2.0"
+
+[global_group]
+
+Enemy=""
 
 [input]
 
@@ -44,6 +52,11 @@ ui_up={
 ]
 }
 
+[physics]
+
+common/physics_ticks_per_second=180
+
 [rendering]
 
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true

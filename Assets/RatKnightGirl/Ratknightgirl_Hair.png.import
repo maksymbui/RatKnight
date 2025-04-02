@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cl5o17vqv3lr5"
 path.s3tc="res://.godot/imported/Ratknightgirl_Hair.png-d4fd8a1d8b05a76105458b33425ea9a0.s3tc.ctex"
+path.etc2="res://.godot/imported/Ratknightgirl_Hair.png-d4fd8a1d8b05a76105458b33425ea9a0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/RatKnightGirl/Ratknightgirl_Hair.png"
-dest_files=["res://.godot/imported/Ratknightgirl_Hair.png-d4fd8a1d8b05a76105458b33425ea9a0.s3tc.ctex"]
+dest_files=["res://.godot/imported/Ratknightgirl_Hair.png-d4fd8a1d8b05a76105458b33425ea9a0.s3tc.ctex", "res://.godot/imported/Ratknightgirl_Hair.png-d4fd8a1d8b05a76105458b33425ea9a0.etc2.ctex"]
 
 [params]
 
