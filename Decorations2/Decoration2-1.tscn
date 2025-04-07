@@ -1,41 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://b4pol7c3i4ppr"]
+[gd_scene load_steps=3 format=3 uid="uid://b4pol7c3i4ppr"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7c6gu"]
-albedo_color = Color(0.403922, 0.635294, 0.309804, 1)
+[ext_resource type="PackedScene" uid="uid://c4puj54g02nlw" path="res://Assets/SewerWall.glb" id="1_fc0rj"]
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_7c6gu"]
-material = SubResource("StandardMaterial3D_7c6gu")
-size = Vector2(50, 100)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_naqv5"]
-albedo_color = Color(0.635294, 0.498039, 1, 1)
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_fc0rj"]
-material = SubResource("StandardMaterial3D_naqv5")
-size = Vector2(3, 100)
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_la5vk"]
-size = Vector2(3, 100)
+[sub_resource type="CylinderMesh" id="CylinderMesh_7c6gu"]
 
 [node name="Decoration2-1" type="Node3D"]
 
-[node name="Floor" type="MeshInstance3D" parent="."]
-mesh = SubResource("PlaneMesh_7c6gu")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 2.01973, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_7c6gu")
 
-[node name="Lines" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.01, 0)
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Lines"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 0)
-mesh = SubResource("PlaneMesh_fc0rj")
-skeleton = NodePath("../..")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Lines"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.01, 0)
-mesh = SubResource("PlaneMesh_la5vk")
-skeleton = NodePath("../..")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Lines"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.01, 0)
-mesh = SubResource("PlaneMesh_la5vk")
-skeleton = NodePath("../..")
+[node name="SewerWall" parent="." instance=ExtResource("1_fc0rj")]

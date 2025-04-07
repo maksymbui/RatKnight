@@ -2,21 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfmr7o6srypkj"
-path.s3tc="res://.godot/imported/SewerWall_WallSewers_Normal_DISP.png-7ce84af3ba36afa9aec34851afe23ba5.s3tc.ctex"
-path.etc2="res://.godot/imported/SewerWall_WallSewers_Normal_DISP.png-7ce84af3ba36afa9aec34851afe23ba5.etc2.ctex"
+uid="uid://cxbw7udu4miu"
+path.s3tc="res://.godot/imported/Ratknightgirl_Skin.png-e50b1282f4cf63b6089e04258bba05cd.s3tc.ctex"
+path.etc2="res://.godot/imported/Ratknightgirl_Skin.png-e50b1282f4cf63b6089e04258bba05cd.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "ee743a5c288039a415666ad29b40eba3"
+"md5": "139841a00baa7d00beabc9fc4674c584"
 }
 
 [deps]
 
-source_file="res://Assets/SewerWall_WallSewers_Normal_DISP.png"
-dest_files=["res://.godot/imported/SewerWall_WallSewers_Normal_DISP.png-7ce84af3ba36afa9aec34851afe23ba5.s3tc.ctex", "res://.godot/imported/SewerWall_WallSewers_Normal_DISP.png-7ce84af3ba36afa9aec34851afe23ba5.etc2.ctex"]
+source_file="res://Assets/RatKnightGirl/Ratknightgirl_Skin.png"
+dest_files=["res://.godot/imported/Ratknightgirl_Skin.png-e50b1282f4cf63b6089e04258bba05cd.s3tc.ctex", "res://.godot/imported/Ratknightgirl_Skin.png-e50b1282f4cf63b6089e04258bba05cd.etc2.ctex"]
 
 [params]
 
