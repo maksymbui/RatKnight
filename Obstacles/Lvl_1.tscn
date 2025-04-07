@@ -1,0 +1,122 @@
+[gd_scene load_steps=9 format=4 uid="uid://cnj616nxonugr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kehga"]
+resource_name = "Material_4"
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_upr84"]
+_surfaces = [{
+"aabb": AABB(-1.5, 0, -50, 3, 1e-05, 100),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAACAAMA"),
+"name": "Material_4",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("//8AAAAAAAD//wAA//8AAAAAAAD//wAAAAAAAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1bw6h"]
+resource_name = "SewerWall_Mesh_1"
+_surfaces = [{
+"aabb": AABB(-1.5, 0, -50, 3, 1e-05, 100),
+"attribute_data": PackedByteArray("//8AAP////8AAP//AAAAAA=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAACAAMA"),
+"material": SubResource("StandardMaterial3D_kehga"),
+"name": "Material_4",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("//8AAAAA/7///wAA////vwAAAAD///+/AAAAAAAA/7////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_upr84")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_507iw"]
+resource_name = "Material_2"
+albedo_color = Color(0.797357, 0.797357, 0.797357, 1)
+metallic = 1.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ycn1o"]
+_surfaces = [{
+"aabb": AABB(-1.5, -1.78323, -50, 3, 1.78323, 100),
+"format": 34359742465,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAACAAMAAAAEAAEAAAAFAAQA"),
+"name": "Material_2",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("AADAPwAAAAAAAEjCAADAPwAAAAAAAEhCAADAvwAAAAAAAEhCAADAvwAAAAAAAEjCAADAP+xA5L8AAEhCAADAP+xA5L8AAEjC")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_5caid"]
+resource_name = "SewerWall_Mesh_2"
+_surfaces = [{
+"aabb": AABB(-1.5, -1.78323, -50, 3, 1.78323, 100),
+"attribute_data": PackedByteArray("AACAPwAAAAAAAIA/AACAPwAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAA=="),
+"format": 34359742487,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAHAAUA"),
+"material": SubResource("StandardMaterial3D_507iw"),
+"name": "Material_2",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AADAPwAAAAAAAEjCAADAPwAAAAAAAEhCAADAvwAAAAAAAEhCAADAvwAAAAAAAEjCAADAPwAAAAAAAEjCAADAP+xA5L8AAEhCAADAPwAAAAAAAEhCAADAP+xA5L8AAEjC/3///////7//f///////v/9///////+//3///////7////9/////v////3////+/////f////7////9/////vw==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ycn1o")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_c15t4"]
+_surfaces = [{
+"aabb": AABB(-1.5, -1.78767, -50, 3, 1.78767, 100),
+"format": 34359742465,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAACAAMAAgAEAAMAAgAFAAQA"),
+"name": "Material_2",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("AADAPwAAAAAAAEjCAADAPwAAAAAAAEhCAADAvwAAAAAAAEhCAADAvwAAAAAAAEjCAADAv2DS5L8AAEjCAADAv2DS5L8AAEhC")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_w3aem"]
+resource_name = "SewerWall_Mesh_3"
+_surfaces = [{
+"aabb": AABB(-1.5, -1.78767, -50, 3, 1.78767, 100),
+"attribute_data": PackedByteArray("AACAPwAAAAAAAIA/AACAPwAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPw=="),
+"format": 34359742487,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAHAAUA"),
+"material": SubResource("StandardMaterial3D_507iw"),
+"name": "Material_2",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AADAPwAAAAAAAEjCAADAPwAAAAAAAEhCAADAvwAAAAAAAEhCAADAvwAAAAAAAEjCAADAvwAAAAAAAEhCAADAv2DS5L8AAEjCAADAvwAAAAAAAEjCAADAv2DS5L8AAEhC/3///////7//f///////v/9///////+//3///////78AAP9/////vwAA/3////+/AAD/f////78AAP9/////vw==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_c15t4")
+
+[node name="Lvl1" type="Node3D"]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 0)
+mesh = SubResource("ArrayMesh_1bw6h")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.01, 0)
+mesh = SubResource("ArrayMesh_5caid")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.01, 0)
+mesh = SubResource("ArrayMesh_w3aem")
+skeleton = NodePath("")

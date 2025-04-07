@@ -1,13 +1,20 @@
 [gd_scene load_steps=3 format=3 uid="uid://b4pol7c3i4ppr"]
 
-[ext_resource type="PackedScene" uid="uid://c4puj54g02nlw" path="res://Assets/SewerWall.glb" id="1_fc0rj"]
+[sub_resource type="BoxMesh" id="BoxMesh_fc0rj"]
 
-[sub_resource type="CylinderMesh" id="CylinderMesh_7c6gu"]
+[sub_resource type="PlaneMesh" id="PlaneMesh_7c6gu"]
+size = Vector2(3, 100)
 
 [node name="Decoration2-1" type="Node3D"]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 2.01973, 0, 0, 0, 1, 0, 0, 0)
-mesh = SubResource("CylinderMesh_7c6gu")
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 22.9493, 0)
+mesh = SubResource("BoxMesh_fc0rj")
 
-[node name="SewerWall" parent="." instance=ExtResource("1_fc0rj")]
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5, 0, 0)
+mesh = SubResource("PlaneMesh_7c6gu")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.5, 0, 0)
+mesh = SubResource("PlaneMesh_7c6gu")

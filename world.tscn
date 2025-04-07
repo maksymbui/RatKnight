@@ -27,7 +27,8 @@ environment = SubResource("Environment_aqk2v")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.900763, -0.434261, 0.00661772, -0.322793, 0.67959, 0.658759, -0.29057, 0.591248, -0.752325, 0, 3.95467, 0)
-light_color = Color(1, 0.745098, 0.501961, 1)
+light_color = Color(0.811944, 0.802436, 0.78574, 1)
+light_energy = 1.158
 shadow_enabled = true
 shadow_transmittance_bias = 1.0
 directional_shadow_blend_splits = true

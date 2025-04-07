@@ -17,7 +17,7 @@ func _stop_gen() -> void:
 	active = false
 
 func _init_blocks() -> void:
-	for block_index in 2:
+	for block_index in 4:
 		var block = terrain2.instantiate()
 		
 		#if block_index < 1:

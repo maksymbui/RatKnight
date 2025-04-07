@@ -1,10 +1,10 @@
-res://Decorations2/Decoration2-1.tscn
 res://player.tscn
+res://terrain_controller.gd
 res://axe.tscn
 res://world.tscn
 res://enemy.tscn
-res://Decorations/Decoration2.tscn
-res://Decorations/Decoration1.tscn
 res://terrain_controller.tscn
 res://terrains/terrain.tscn
 res://terrains/terrain2.tscn
+res://Decorations2/Decoration2-1.tscn
+res://Obstacles/Lvl_1.tscn
