@@ -106,17 +106,17 @@ shadow_mesh = SubResource("ArrayMesh_c15t4")
 
 [node name="Lvl1" type="Node3D"]
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+[node name="Mainroad_01" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 0)
 mesh = SubResource("ArrayMesh_1bw6h")
 skeleton = NodePath("")
 
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+[node name="Mainroad_02" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.01, 0)
 mesh = SubResource("ArrayMesh_5caid")
 skeleton = NodePath("")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+[node name="Mainroad_03" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.01, 0)
 mesh = SubResource("ArrayMesh_w3aem")
 skeleton = NodePath("")

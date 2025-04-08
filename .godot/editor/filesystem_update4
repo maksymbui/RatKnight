@@ -1,5 +1,4 @@
 res://player.tscn
-res://terrain_controller.gd
 res://axe.tscn
 res://world.tscn
 res://enemy.tscn
