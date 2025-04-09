@@ -1,2 +1,10 @@
+res://LVLS/Lvl_1.tscn
+res://player.tscn
+res://axe.tscn
+res://world.tscn
 res://enemy.tscn
+res://terrain_controller.tscn
+res://terrains/terrain.tscn
+res://terrains/terrain2.tscn
 res://Decorations2/Decoration2-1.tscn
+res://Obstacles/Blocks.tscn

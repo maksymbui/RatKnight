@@ -1,4 +1,6 @@
-[gd_scene load_steps=26 format=4 uid="uid://b4pol7c3i4ppr"]
+[gd_scene load_steps=27 format=4 uid="uid://b4pol7c3i4ppr"]
+
+[ext_resource type="PackedScene" uid="uid://docf804lqnnt" path="res://Assets/gltf/torchWall.gltf.glb" id="1_fc0rj"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_fc0rj"]
 
@@ -293,3 +295,27 @@ size = Vector3(3, 1, 100)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.905806, 0)
 material_override = SubResource("StandardMaterial3D_fc0rj")
 mesh = SubResource("BoxMesh_la5vk")
+
+[node name="torchWall_gltf" parent="." instance=ExtResource("1_fc0rj")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.9074, 3.06843, 38.4858)
+
+[node name="torchWall_gltf2" parent="." instance=ExtResource("1_fc0rj")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.9074, 3.06843, 11.1928)
+
+[node name="torchWall_gltf3" parent="." instance=ExtResource("1_fc0rj")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.9074, 3.06843, -12.9383)
+
+[node name="torchWall_gltf4" parent="." instance=ExtResource("1_fc0rj")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.9074, 3.06843, -36.5318)
+
+[node name="torchWall_gltf5" parent="." instance=ExtResource("1_fc0rj")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 19.9898, 3.06843, 38.4858)
+
+[node name="torchWall_gltf6" parent="." instance=ExtResource("1_fc0rj")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 19.9898, 3.06843, 11.1928)
+
+[node name="torchWall_gltf7" parent="." instance=ExtResource("1_fc0rj")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 19.9898, 3.06843, -12.9383)
+
+[node name="torchWall_gltf8" parent="." instance=ExtResource("1_fc0rj")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 19.9898, 3.06843, -36.5318)
