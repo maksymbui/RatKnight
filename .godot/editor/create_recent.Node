@@ -1,11 +1,11 @@
+CollisionShape3D
+Area3D
 MeshInstance3D
+StaticBody3D
 CSGBox3D
 CSGMesh3D
 Node3D
-CollisionShape3D
-StaticBody3D
 AnimationTree
-Area3D
 RayCast3D
 Timer
 CharacterBody3D

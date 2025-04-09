@@ -3,8 +3,8 @@ extends CharacterBody3D
 @export var MOVE_SPEED: float = 10
 var target_lane: int = 1
 var LANES: Array = [-3, 0, 3]
-var gravity_pull: float = 24
-var jump_velocity: float = 10
+var gravity_pull: float = 30
+var jump_velocity: float = 13.5
 var target_velocity: Vector3 = Vector3.ZERO
 var state: String = "run"
 
