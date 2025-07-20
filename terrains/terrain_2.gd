@@ -1,6 +1,6 @@
 extends MeshInstance3D
 
-@export_dir var decorations_dir = "res://Decorations2"
+@export_dir var decorations_dir = "res://Decorations"
 @export_dir var obstacles_dir = "res://LVLS"
 #@export var decor: PackedScene
 var decorations: Array

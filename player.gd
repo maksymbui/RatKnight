@@ -8,6 +8,7 @@ var jump_velocity: float = 13.5
 var target_velocity: Vector3 = Vector3.ZERO
 var state: String = "run"
 
+signal killed
 signal hit
 
 func _physics_process(delta: float) -> void:
@@ -89,6 +90,7 @@ func _physics_process(delta: float) -> void:
 	var collider = $rig/Skeleton3D/axe_2handed/Axe/RayCast3D.get_collider()
 	if collider != null and collider.is_in_group("Enemy") && state == "attack":
 		collider.hit()
+		killed.emit()
 	
 	move_and_slide()
 

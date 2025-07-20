@@ -4,9 +4,10 @@ extends Node3D
 @export var terrain2 :PackedScene
 var terrain_render: Array[MeshInstance3D] = []
 var terrain_velocity: float = 20
-var active: bool = true
+var active: bool
 
 func _ready() -> void:
+	active = false
 	_init_blocks()
 
 func _physics_process(delta: float) -> void:
@@ -18,7 +19,7 @@ func _stop_gen() -> void:
 
 func _init_blocks() -> void:
 	for block_index in 4:
-		var block = terrain2.instantiate()
+		var block = terrain.instantiate()
 		
 		#if block_index < 1:
 			#block.generate_empty()
@@ -42,7 +43,7 @@ func _progress_terrain(delta: float):
 		var last_terrain = terrain_render[-1]
 		var first_terrain = terrain_render.pop_front()
 		
-		var block = terrain2.instantiate()
+		var block = terrain.instantiate()
 		append_to_edge(last_terrain, block)
 		add_child(block)
 		terrain_render.append(block)

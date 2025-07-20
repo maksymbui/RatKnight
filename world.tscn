@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://7i87o5egx8xe"]
+[gd_scene load_steps=8 format=3 uid="uid://7i87o5egx8xe"]
 
 [ext_resource type="Script" uid="uid://d34cej0ontcpq" path="res://world.gd" id="1_f3sb7"]
 [ext_resource type="PackedScene" uid="uid://b3seu3qo7qgao" path="res://player.tscn" id="2_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://nmbusgwu6tqd" path="res://terrain_controller.tscn" id="3_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://5huvtv7q3d1n" path="res://hud.tscn" id="4_aqk2v"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_fj7yv"]
 
@@ -40,5 +41,9 @@ transform = Transform3D(-1.25, 0, -1.88745e-07, 0, 1.25, 0, 1.88745e-07, 0, -1.2
 
 [node name="Timer" type="Timer" parent="."]
 
+[node name="HUD" parent="." instance=ExtResource("4_aqk2v")]
+
 [connection signal="hit" from="Player" to="." method="_on_player_hit"]
+[connection signal="killed" from="Player" to="." method="_on_player_killed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="start_game" from="HUD" to="." method="_on_hud_start_game"]
