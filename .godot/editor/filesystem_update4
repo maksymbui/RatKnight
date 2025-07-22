@@ -12,9 +12,9 @@ res://Decorations/Decoration2.tscn
 res://Decorations/Decoration1.tscn
 res://ratknightgirl.tscn
 res://Obstacles/Blocks.tscn
-res://terrain_controller.gd
-res://terrains/terrain_2.gd
-res://world.gd
-res://hud.gd
 res://hud.tscn
 res://player.gd
+res://Trampoline.gd
+res://trampoline.tscn
+res://terrain_controller.gd
+res://hud.gd

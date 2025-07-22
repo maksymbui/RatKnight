@@ -9,7 +9,6 @@ func show_message(text):
 	
 func show_game_over():
 	show_message("Game Over")
-	print("Bye")
 	# Wait until the MessageTimer has counted down.
 	await $Timer.timeout
 	$Message.text = "Press start..."

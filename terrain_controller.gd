@@ -13,6 +13,10 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	if active:
 		_progress_terrain(delta)
+		if terrain_velocity > 20 && Input.is_action_just_pressed("Q"):
+			terrain_velocity -= 1
+		if terrain_velocity < 200 && Input.is_action_just_pressed("E"):
+			terrain_velocity += 1
 
 func _stop_gen() -> void:
 	active = false

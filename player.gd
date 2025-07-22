@@ -23,7 +23,7 @@ func _physics_process(delta: float) -> void:
 				$Strafe.stop()
 			state = "attack"
 			if not is_on_floor():
-				gravity_pull = 30
+				gravity_pull = 50
 			$Attack.start()
 
 		#Changing Lanes
@@ -41,6 +41,9 @@ func _physics_process(delta: float) -> void:
 			
 		#Jumping
 		if Input.is_action_just_pressed("ui_up") and is_on_floor() and state != "stop":
+			if state == "attack":
+				$Attack.stop()
+				state = "run"
 			target_velocity.y = jump_velocity
 		
 		var target_x: float = LANES[target_lane]
@@ -53,6 +56,7 @@ func _physics_process(delta: float) -> void:
 		$AnimationPlayer.play("Attack")
 		
 	if is_on_floor() and state != "stop":
+		gravity_pull = 30
 		if state == "run":
 			$AnimationPlayer.play("WeaponRun")
 		if state == "left":
@@ -102,4 +106,4 @@ func _on_attack_timeout() -> void:
 	state = "run"
 	
 func _on_axe_hit() -> void:
-	print("Hitted Enemy") # Replace with function body.
+	return

@@ -1,11 +1,11 @@
+CollisionShape3D
+MeshInstance3D
+Area3D
 Button
 Timer
 Label
 CanvasLayer
 CanvasGroup
-CollisionShape3D
-Area3D
-MeshInstance3D
 StaticBody3D
 CSGBox3D
 CSGMesh3D
