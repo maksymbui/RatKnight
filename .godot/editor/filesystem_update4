@@ -1,20 +1,17 @@
 res://player.tscn
-res://axe.tscn
-res://world.tscn
-res://enemy.tscn
-res://terrain_controller.tscn
-res://terrains/terrain.tscn
-res://terrains/terrain2.tscn
-res://Decorations2/Decoration2-1.tscn
-res://LVLS/Lvl_1.tscn
-res://Obstacles/ConesBlock.tscn
 res://Decorations/Decoration2.tscn
 res://Decorations/Decoration1.tscn
-res://ratknightgirl.tscn
-res://Obstacles/Blocks.tscn
-res://hud.tscn
-res://player.gd
-res://Trampoline.gd
 res://trampoline.tscn
-res://terrain_controller.gd
-res://hud.gd
+res://enemy.tscn
+res://Assets/Decoration2.tscn
+res://Assets/Decoration1.tscn
+res://LVLS/Lvl_1.tscn
+res://Decorations/Decoration2-1.tscn
+res://Assets/MAIN FILES/Platform.glb
+res://Assets/MAIN FILES/PlatformwithBridge.tscn
+res://Assets/MAIN FILES/Spikes.tscn
+res://Obstacles/Blocks.tscn
+res://Obstacles/ConesBlock.tscn
+res://terrains/terrain2.tscn
+res://terrains/terrain.tscn
+res://Assets/MAIN FILES/SewerWall.tscn

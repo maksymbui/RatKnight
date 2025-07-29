@@ -1,0 +1,39 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bwrjopmr50dg8"
+path.s3tc="res://.godot/imported/SewerWall_Wall_texture_Normal.png-9495d9aa9c0c926247527f769075d838.s3tc.ctex"
+path.etc2="res://.godot/imported/SewerWall_Wall_texture_Normal.png-9495d9aa9c0c926247527f769075d838.etc2.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "96c48f4791e413fa6a453e1631d5f2d1"
+}
+
+[deps]
+
+source_file="res://Assets/MAIN FILES/SewerWall_Wall_texture_Normal.png"
+dest_files=["res://.godot/imported/SewerWall_Wall_texture_Normal.png-9495d9aa9c0c926247527f769075d838.s3tc.ctex", "res://.godot/imported/SewerWall_Wall_texture_Normal.png-9495d9aa9c0c926247527f769075d838.etc2.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://Assets/MAIN FILES/SewerWall_Wall_texture_Normal.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

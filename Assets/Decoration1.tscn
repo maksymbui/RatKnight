@@ -1,9 +1,9 @@
 [gd_scene load_steps=19 format=3 uid="uid://cy7p2wfojhp18"]
 
-[ext_resource type="PackedScene" uid="uid://dwcqppagoj6tx" path="res://Assets/gltf/wallSingle_door.gltf.glb" id="1_o6i13"]
-[ext_resource type="PackedScene" uid="uid://dkofbcwa0vlxg" path="res://Assets/gltf/wall.gltf.glb" id="2_osrop"]
-[ext_resource type="PackedScene" uid="uid://docf804lqnnt" path="res://Assets/gltf/torchWall.gltf.glb" id="3_x8sx7"]
-[ext_resource type="PackedScene" uid="uid://c23lx631slc14" path="res://trampoline.tscn" id="4_h47gt"]
+[ext_resource type="PackedScene" uid="uid://dwcqppagoj6tx" path="res://Assets/gltf/wallSingle_door.gltf.glb" id="1_obi03"]
+[ext_resource type="PackedScene" uid="uid://dkofbcwa0vlxg" path="res://Assets/gltf/wall.gltf.glb" id="2_7j6cm"]
+[ext_resource type="PackedScene" uid="uid://docf804lqnnt" path="res://Assets/gltf/torchWall.gltf.glb" id="3_fje30"]
+[ext_resource type="PackedScene" uid="uid://c23lx631slc14" path="res://trampoline.tscn" id="4_gpjh8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_207og"]
 albedo_color = Color(0.137255, 0.180392, 0.239216, 1)
@@ -172,60 +172,60 @@ shape = SubResource("BoxShape3D_h47gt")
 
 [node name="Walls" type="Node3D" parent="."]
 
-[node name="wallSingle_door_gltf" parent="Walls" instance=ExtResource("1_o6i13")]
+[node name="wallSingle_door_gltf" parent="Walls" instance=ExtResource("1_obi03")]
 transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, -3.20813, 94.7474)
 
-[node name="wallSingle_door_gltf2" parent="Walls" instance=ExtResource("1_o6i13")]
+[node name="wallSingle_door_gltf2" parent="Walls" instance=ExtResource("1_obi03")]
 transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, -4, -100)
 
-[node name="wallSingle_door_gltf3" parent="Walls" instance=ExtResource("1_o6i13")]
+[node name="wallSingle_door_gltf3" parent="Walls" instance=ExtResource("1_obi03")]
 transform = Transform3D(-8, 0, -6.99382e-07, 0, 8, 0, 6.99382e-07, 0, -8, 0, -4, -100)
 
-[node name="wall_gltf" parent="Walls" instance=ExtResource("2_osrop")]
+[node name="wall_gltf" parent="Walls" instance=ExtResource("2_7j6cm")]
 transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -28.8217, -4.23213, -81.4994)
 
-[node name="wall_gltf2" parent="Walls" instance=ExtResource("2_osrop")]
+[node name="wall_gltf2" parent="Walls" instance=ExtResource("2_7j6cm")]
 transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -28.8217, -4.23213, -49.5182)
 
-[node name="wall_gltf5" parent="Walls" instance=ExtResource("2_osrop")]
+[node name="wall_gltf5" parent="Walls" instance=ExtResource("2_7j6cm")]
 transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -28.8217, -4.23213, 46.2659)
 
-[node name="wall_gltf6" parent="Walls" instance=ExtResource("2_osrop")]
+[node name="wall_gltf6" parent="Walls" instance=ExtResource("2_7j6cm")]
 transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -28.8217, -4.23213, 78.2471)
 
-[node name="wall_gltf3" parent="Walls" instance=ExtResource("2_osrop")]
+[node name="wall_gltf3" parent="Walls" instance=ExtResource("2_7j6cm")]
 transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -28.8217, -4.23213, -17.6961)
 
-[node name="wall_gltf4" parent="Walls" instance=ExtResource("2_osrop")]
+[node name="wall_gltf4" parent="Walls" instance=ExtResource("2_7j6cm")]
 transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -28.8217, -4.23213, 14.2944)
 
-[node name="wall_gltf7" parent="Walls" instance=ExtResource("2_osrop")]
+[node name="wall_gltf7" parent="Walls" instance=ExtResource("2_7j6cm")]
 transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, 28.82, -4.23213, -81.4994)
 
-[node name="wall_gltf8" parent="Walls" instance=ExtResource("2_osrop")]
+[node name="wall_gltf8" parent="Walls" instance=ExtResource("2_7j6cm")]
 transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, 28.82, -4.23213, -49.5182)
 
-[node name="wall_gltf9" parent="Walls" instance=ExtResource("2_osrop")]
+[node name="wall_gltf9" parent="Walls" instance=ExtResource("2_7j6cm")]
 transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, 28.82, -4.23213, 46.2659)
 
-[node name="wall_gltf10" parent="Walls" instance=ExtResource("2_osrop")]
+[node name="wall_gltf10" parent="Walls" instance=ExtResource("2_7j6cm")]
 transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, 28.82, -4.23213, 78.2471)
 
-[node name="wall_gltf11" parent="Walls" instance=ExtResource("2_osrop")]
+[node name="wall_gltf11" parent="Walls" instance=ExtResource("2_7j6cm")]
 transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, 28.82, -4.23213, -17.6961)
 
-[node name="wall_gltf12" parent="Walls" instance=ExtResource("2_osrop")]
+[node name="wall_gltf12" parent="Walls" instance=ExtResource("2_7j6cm")]
 transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, 28.82, -4.23213, 14.2944)
 
 [node name="LightSide" type="Node3D" parent="."]
 
-[node name="torchWall_gltf" parent="LightSide" instance=ExtResource("3_x8sx7")]
+[node name="torchWall_gltf" parent="LightSide" instance=ExtResource("3_fje30")]
 transform = Transform3D(-1.66322e-07, 0, 3.805, 0, 3.805, 0, -3.805, 0, -1.66322e-07, -23.6301, 9.59578, 0)
 
-[node name="torchWall_gltf2" parent="LightSide" instance=ExtResource("3_x8sx7")]
+[node name="torchWall_gltf2" parent="LightSide" instance=ExtResource("3_fje30")]
 transform = Transform3D(-1.66322e-07, 0, 3.805, 0, 3.805, 0, -3.805, 0, -1.66322e-07, -23.6301, 9.59578, 53.1519)
 
-[node name="torchWall_gltf3" parent="LightSide" instance=ExtResource("3_x8sx7")]
+[node name="torchWall_gltf3" parent="LightSide" instance=ExtResource("3_fje30")]
 transform = Transform3D(-1.66322e-07, 0, 3.805, 0, 3.805, 0, -3.805, 0, -1.66322e-07, -23.6301, 9.59578, -48.9271)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="LightSide"]
@@ -252,13 +252,13 @@ light_indirect_energy = 8.475
 omni_range = 34.531
 omni_attenuation = 0.101
 
-[node name="torchWall_gltf4" parent="LightSide" instance=ExtResource("3_x8sx7")]
+[node name="torchWall_gltf4" parent="LightSide" instance=ExtResource("3_fje30")]
 transform = Transform3D(4.98966e-07, 0, -3.805, 0, 3.805, 0, 3.805, 0, 4.98966e-07, 23.8678, 9.59578, -2.06581e-06)
 
-[node name="torchWall_gltf5" parent="LightSide" instance=ExtResource("3_x8sx7")]
+[node name="torchWall_gltf5" parent="LightSide" instance=ExtResource("3_fje30")]
 transform = Transform3D(4.98966e-07, 0, -3.805, 0, 3.805, 0, 3.805, 0, 4.98966e-07, 23.8678, 9.59578, -53.1519)
 
-[node name="torchWall_gltf6" parent="LightSide" instance=ExtResource("3_x8sx7")]
+[node name="torchWall_gltf6" parent="LightSide" instance=ExtResource("3_fje30")]
 transform = Transform3D(4.98966e-07, 0, -3.805, 0, 3.805, 0, 3.805, 0, 4.98966e-07, 23.8678, 9.59578, 48.9271)
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="LightSide"]
@@ -288,10 +288,10 @@ omni_attenuation = 0.101
 [node name="LightFront" type="Node3D" parent="."]
 visible = false
 
-[node name="torchWall_gltf" parent="LightFront" instance=ExtResource("3_x8sx7")]
+[node name="torchWall_gltf" parent="LightFront" instance=ExtResource("3_fje30")]
 transform = Transform3D(-0.413116, 0, 3.78251, 0, 3.805, 0, -3.78251, 0, -0.413116, -8.54588, 8.4548, 96.6853)
 
-[node name="torchWall_gltf2" parent="LightFront" instance=ExtResource("3_x8sx7")]
+[node name="torchWall_gltf2" parent="LightFront" instance=ExtResource("3_fje30")]
 transform = Transform3D(0.22228, 0, -3.7985, 0, 3.805, 0, 3.7985, 0, 0.22228, 8.44877, 8.74143, 98.0126)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="LightFront"]
@@ -324,5 +324,5 @@ mesh = SubResource("PlaneMesh_207og")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.01, 0)
 mesh = SubResource("PlaneMesh_207og")
 
-[node name="Trampoline" parent="." instance=ExtResource("4_h47gt")]
+[node name="Trampoline" parent="." instance=ExtResource("4_gpjh8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.116431, -5)
