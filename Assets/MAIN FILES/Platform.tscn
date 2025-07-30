@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://dyvbs62im41bw"]
+[gd_scene load_steps=8 format=4 uid="uid://dyvbs62im41bw"]
 
 [ext_resource type="Texture2D" uid="uid://ccyl6pw121k27" path="res://Assets/MAIN FILES/Wood Texture.png" id="1_n6j73"]
 
@@ -46,7 +46,10 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_tgrgq")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_n6j73"]
-size = Vector3(1.41638, 1.95898, 2.20795)
+size = Vector3(1.41638, 0.0104969, 2.21981)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fc3ku"]
+size = Vector3(1.37309, 2.30722, 2.21571)
 
 [node name="Platform" type="Node3D"]
 
@@ -58,5 +61,11 @@ skeleton = NodePath("")
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000183105, 0.843856, -0.0015564)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000183105, 1.8181, 0.00543499)
 shape = SubResource("BoxShape3D_n6j73")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="." groups=["Enemy"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.86646e-05, 0.65361, 0.0133591)
+shape = SubResource("BoxShape3D_fc3ku")

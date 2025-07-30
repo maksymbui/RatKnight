@@ -37947,7 +37947,7 @@ bones/771/rotation = Quaternion(-0.707107, 0, 0, 0.707107)
 bones/771/scale = Vector3(1, 1, 1)
 
 [node name="axe_2handed" type="BoneAttachment3D" parent="rig/Skeleton3D"]
-transform = Transform3D(0.0385703, -0.357582, 0.125179, 0.013417, 0.127036, 0.358754, -0.378622, -0.0319252, 0.0254649, -0.339038, 0.996052, 0.266574)
+transform = Transform3D(0.0385703, -0.357582, 0.125179, 0.0134171, 0.127036, 0.358754, -0.378622, -0.0319252, 0.025465, -0.339038, 0.996052, 0.266574)
 bone_name = "axe_2handed"
 bone_idx = 15
 

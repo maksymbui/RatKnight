@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://canh51cj454b6"]
+[gd_scene load_steps=8 format=4 uid="uid://canh51cj454b6"]
 
 [ext_resource type="Texture2D" uid="uid://ccyl6pw121k27" path="res://Assets/MAIN FILES/Wood Texture.png" id="1_keuaq"]
 
@@ -44,7 +44,10 @@ shadow_mesh = SubResource("ArrayMesh_dikly")
 albedo_texture = ExtResource("1_keuaq")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_keuaq"]
-size = Vector3(1.01448, 0.81546, 0.750488)
+size = Vector3(0.988727, 0.81546, 0.135399)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7b5c2"]
+size = Vector3(0.580648, 0.611208, 0.328644)
 
 [node name="Spikes2" type="Node3D"]
 
@@ -54,8 +57,12 @@ mesh = SubResource("ArrayMesh_vtogq")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_7b5c2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
+[node name="StaticBody3D" type="StaticBody3D" parent="." groups=["Enemy"]]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0072403, 0.439041, -0.098877)
+transform = Transform3D(1, 0, 0, 0, 0.97237, 0.233445, 0, -0.233445, 0.97237, 0.00652898, 0.452047, -0.0897223)
 shape = SubResource("BoxShape3D_keuaq")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.962989, 0.269542, 0, -0.269542, 0.962989, 0.0398149, 0.507715, 0.122921)
+shape = SubResource("BoxShape3D_7b5c2")
