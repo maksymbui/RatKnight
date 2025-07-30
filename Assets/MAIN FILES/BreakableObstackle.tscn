@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://bvm0wju6fqffh"]
+[gd_scene load_steps=27 format=4 uid="uid://bvm0wju6fqffh"]
 
 [ext_resource type="Texture2D" uid="uid://ccyl6pw121k27" path="res://Assets/MAIN FILES/Wood Texture.png" id="1_vdnho"]
 
@@ -8,7 +8,7 @@ cull_mode = 2
 albedo_texture = ExtResource("1_vdnho")
 metallic = 0.08
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_22igj"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_vdnho"]
 _surfaces = [{
 "aabb": AABB(-0.0927057, -0.899747, -0.0886215, 0.185411, 1.79949, 0.177243),
 "format": 34896613377,
@@ -38,7 +38,7 @@ _surfaces = [{
 "vertex_data": PackedByteArray("AAD//wAA/7///wAAAAD/vwAAAAAAAP+//////wAA/7///////////wAAAAD///////8AAP////8AAP////////////8AAFTV//8AAP//VNX//wAAAABU1f///////1TVAAD/////VNUAAAAAAABU1QAAAAD//1TVAAD//wAAVNX/////////vwAA//8AAP+/AAD//////7//////AAD/v///////////////////////v/+//7//v/+//7//v/+/VNVU1VTVVNVU1VTVVNVU1aoqqiqqKqoqqiqqKqoqqioAAP9/AAD/fwAA/38AAP9/")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_22igj")
+shadow_mesh = SubResource("ArrayMesh_vdnho")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h6anf"]
 resource_name = "Wood"
@@ -46,7 +46,7 @@ cull_mode = 2
 albedo_texture = ExtResource("1_vdnho")
 metallic = 0.08
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_d2uki"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_byndv"]
 _surfaces = [{
 "aabb": AABB(-0.401388, -0.274157, -0.0438064, 0.814801, 0.549217, 0.0876127),
 "format": 34896613377,
@@ -76,9 +76,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("AAAAAPAA///B8f//AAD//64GxtvwAP////9gIwAA//8AAAAADv9DwMHx//////7B//9gI///4sOuBsbbDv8pvgAAAADwAC3T//9gI///LdP//2AjAAAt0wAAAAAO/y3T//9gIwAAFsDB8f////8WwMHx//8AABbA//9gI///FsDB8f//AADO164GxtsO/87XrgbG2/AAztfB8f/////O18m/NcBvvpPBc8GQvvO8EMP4//j/+P/4//n/+P/4//j/rFalUqxWpVKsVqVSrFalUiiLlAUoi5QFKIuUBSiLlAU52B0sOdgdLDnYHSw52B0s")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_d2uki")
+shadow_mesh = SubResource("ArrayMesh_byndv")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_o1sr3"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_boaqr"]
 _surfaces = [{
 "aabb": AABB(-0.385807, -0.271222, -0.0438064, 0.765303, 0.541214, 0.0876127),
 "format": 34896613377,
@@ -108,9 +108,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("D/X///AAidcAAOHf//+J1wAA4d8AAInXD/X//w7/idcAAOHfAAA//SgPAAD//z/9KA8AAAAAP/0AAOHf//8//SgPAAAAABPT//9HIQ7/E9P//0ch8AAT0ygPAAD//xPTKA8AAP//f8MP9f//Dv83w///RyEO/9LCAADh3///4sMoDwAAAAD//w/1///wAP//AADh3wAA/////0ch8AD//+vX9ivr1/Yr69f2K+vX9it9QQN9fUEDfX1BA319QQN9vVaDUr1Wg1K9VoNSvVaDUgYABgAGAAYABgAGAAUABgDAQj89hUJ1PQ5D8Tw3Qsc9")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_o1sr3")
+shadow_mesh = SubResource("ArrayMesh_boaqr")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ioux8"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_h8bbq"]
 _surfaces = [{
 "aabb": AABB(-0.170523, -0.136478, -6.84261e-05, 0.35513, 0.271604, 0.000136733),
 "format": 34896613377,
@@ -140,9 +140,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("PAsAAAAARcV14P////8Ax///Jkb//+TIAABlvAAAKsP3//n/9//5//j/+f/3//n/")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_ioux8")
+shadow_mesh = SubResource("ArrayMesh_h8bbq")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_s5efa"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_f40o5"]
 _surfaces = [{
 "aabb": AABB(-0.402, -0.251988, -0.0438064, 0.800088, 0.503819, 0.0876129),
 "format": 34896613377,
@@ -172,9 +172,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("VQeuDgAAOtYq+wAA/v861ir7AAAAADrWVQeuDv7/OtYq+wAAAAABwP//efH+/wHA//958QAAAcAq+wAA/v8BwP//efEAAH7UAAD/////ftQAAP//AAB+1P//efH+/37U//958f7/I8BVB64O/v8hvwAA/////wi+KvsAAP7/SsH//3nxAAD//1UHrg4AAP//KvsAAAAA//8AAP//AAD//8tUZ1bLVGdWy1RnVstUZ1YGfvIDBn7yAwZ+8gMGfvIDTtQnKk7UJypO1CcqTtQnKv9//3//f/9//3//f/9//38cQBvArcCtQANBA8GKwYpB")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_s5efa")
+shadow_mesh = SubResource("ArrayMesh_f40o5")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ieubp"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_qhfs1"]
 _surfaces = [{
 "aabb": AABB(-0.386961, -0.247555, -0.0438064, 0.777835, 0.495267, 0.0876129),
 "format": 34896613377,
@@ -204,9 +204,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("c/h79QAA//8AAFoKAAD/////AAAAAP//+AT//wAA//9z+Hv1//8ovwAAWgr+/xvA+AT/////SsH//wAA/v8IvnP4e/UAAK/U+AT/////r9T4BP//AACv1HP4e/X//6/U+AT//wAAFP8AAFoK/v8U/wAAWgoAABT/+AT/////FP8AAFoKAADv1f//AAD+/+/V//8AAAAA79UAAFoK/v/v1afAqEAWQBXAisGKQQNBA8H/f/9//3//f/9//3//f/9/i9RFKovURSqL1EUqi9RFKvz+fj/8/n4//P5+P/z+fj/3VA9W91QPVvdUD1b3VA9W")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_ieubp")
+shadow_mesh = SubResource("ArrayMesh_qhfs1")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_tpite"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_8bt71"]
 _surfaces = [{
 "aabb": AABB(-0.0927057, -0.899747, -0.0886215, 0.185411, 1.79949, 0.177243),
 "format": 34359742465,
@@ -236,11 +236,11 @@ _surfaces = [{
 "vertex_data": PackedByteArray("eNy9PdhVZj8wf7W9eNy9vdZVZr8wf7W9eNy9vdhVZj8wf7W9eNy9PdZVZr8wf7W9eNy9vdhVZj8wf7U9eNy9PdZVZr8wf7U9eNy9PdhVZj8wf7U9eNy9vdZVZr8wf7U9eNy9vdhVZj8wf7W9eNy9vdZVZr8wf7U9eNy9vdhVZj8wf7U9eNy9vdZVZr8wf7W9eNy9PdhVZj8wf7U9eNy9PdZVZr8wf7W9eNy9PdhVZj8wf7W9eNy9PdZVZr8wf7U9eNy9vdhVZj8wf7U9eNy9PdhVZj8wf7W9eNy9vdhVZj8wf7W9eNy9PdhVZj8wf7U9eNy9vdZVZr8wf7W9eNy9vdZVZr8wf7U9eNy9vdhVZj8wf7W9eNy9PdZVZr8wf7W9eNy9PdZVZr8wf7U9/3//f/9//v//f/9//3/+//9//3//f/7//3//f/9//v///////3//////////f/////////9//////////3///////3//f/7/////f/9//v////9//3/+/////3//f/7/AAD/f/9///8AAP9//3///wAA/3//f///AAD/f/9/////fwAA////v/9/AAD///+//38AAP///7//fwAA////vyDq3ZX///+/IOrdlf///78g6t2V////vyDq3ZX///+/IOrdlf///78=")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_tpite")
+shadow_mesh = SubResource("ArrayMesh_8bt71")
 
 [sub_resource type="Animation" id="Animation_hvisq"]
 resource_name = "Breakeble OBstacleAction"
-length = 0.1
+length = 0.3
 tracks/0/type = "position_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
@@ -963,6 +963,9 @@ _data = {
 &"Breakeble OBstacleAction_006": SubResource("Animation_vyffb")
 }
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_vdnho"]
+size = Vector3(1.54944, 1.59973, 0.278748)
+
 [node name="BreakableObstackle" type="Node3D"]
 
 [node name="Breakeble OBstacle" type="MeshInstance3D" parent="."]
@@ -1004,3 +1007,9 @@ skeleton = NodePath("")
 libraries = {
 &"": SubResource("AnimationLibrary_drvsi")
 }
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0560913, 0.822449, 1.0191)
+shape = SubResource("BoxShape3D_vdnho")

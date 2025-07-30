@@ -1,0 +1,1017 @@
+[gd_scene load_steps=28 format=4 uid="uid://bonoywy7f206k"]
+
+[ext_resource type="Texture2D" uid="uid://ccyl6pw121k27" path="res://Assets/MAIN FILES/Wood Texture.png" id="1_erqxl"]
+[ext_resource type="Script" uid="uid://bborw36ybluox" path="res://enemy.gd" id="1_hnq1g"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l0ens"]
+resource_name = "Wood.001"
+cull_mode = 2
+albedo_texture = ExtResource("1_erqxl")
+metallic = 0.08
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_22igj"]
+_surfaces = [{
+"aabb": AABB(-0.0927057, -0.899747, -0.0886215, 0.185411, 1.79949, 0.177243),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEABQAAAAIABQACAAYABwADAAAABwAAAAUAAwAHAAQABwAFAAYABwAGAAQA"),
+"name": "Wood.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD//wAAAAD//wAAAAAAAAAAAAAAAAAA/////wAAAAD//wAA//8AAAAA/////wAAAAAAAP//AAD///////8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hnq1g"]
+resource_name = "BreakableObstackle_Plane_003"
+_surfaces = [{
+"aabb": AABB(-0.0927057, -0.899747, -0.0886215, 0.185411, 1.79949, 0.177243),
+"attribute_data": PackedByteArray("Zo0AalIH0HdSBwBqZo3Qd2aN+k5SB8tcUgf6TmaNy1xmjdB3UgcFhVIH0HdmjQWFZo3LXFIHAGpSB8tcZo0AamaNBYVmjQBqZo3LXGaN0Hc="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEA"),
+"material": SubResource("StandardMaterial3D_l0ens"),
+"name": "Wood.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("AAD//wAA/7///wAAAAD/vwAAAAAAAP+//////wAA/7///////////wAAAAD///////8AAP////8AAP////////////8AAFTV//8AAP//VNX//wAAAABU1f///////1TVAAD/////VNUAAAAAAABU1QAAAAD//1TVAAD//wAAVNX/////////vwAA//8AAP+/AAD//////7//////AAD/v///////////////////////v/+//7//v/+//7//v/+/VNVU1VTVVNVU1VTVVNVU1aoqqiqqKqoqqiqqKqoqqioAAP9/AAD/fwAA/38AAP9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_22igj")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h6anf"]
+resource_name = "Wood"
+cull_mode = 2
+albedo_texture = ExtResource("1_erqxl")
+metallic = 0.08
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_d2uki"]
+_surfaces = [{
+"aabb": AABB(-0.401388, -0.274157, -0.0438064, 0.814801, 0.549217, 0.0876127),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAQADAAIAAAAEAAEAAQAFAAMABAAFAAEABgADAAUAAAAHAAQAAAAGAAcABAAHAAUABgAFAAcA"),
+"name": "Wood",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAPAAAADB8f//AAAAAK4GxtvwAAAArgbG2w7/AAD//2AjAAAAAMHx/////wAAAAAAAA7/AAD//2Aj//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_nln82"]
+resource_name = "BreakableObstackle_Plane_004"
+_surfaces = [{
+"aabb": AABB(-0.401388, -0.274157, -0.0438064, 0.814801, 0.549217, 0.0876127),
+"attribute_data": PackedByteArray("Mgeqwr8psIm/KarCMgewib8pq8BMTKT5vymk+UxMq8CqUqrCTEywiapSsIlMTKrCZV+k+QhZF9dlXxfXCFmk+QhZpPmqUqvACFmrwKpSpPk="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEA"),
+"material": SubResource("StandardMaterial3D_h6anf"),
+"name": "Wood",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("AAAAAPAA///B8f//AAD//64GxtvwAP////9gIwAA//8AAAAADv9DwMHx//////7B//9gI///4sOuBsbbDv8pvgAAAADwAC3T//9gI///LdP//2AjAAAt0wAAAAAO/y3T//9gIwAAFsDB8f////8WwMHx//8AABbA//9gI///FsDB8f//AADO164GxtsO/87XrgbG2/AAztfB8f/////O18m/NcBvvpPBc8GQvvO8EMP4//j/+P/4//n/+P/4//j/rFalUqxWpVKsVqVSrFalUiiLlAUoi5QFKIuUBSiLlAU52B0sOdgdLDnYHSw52B0s")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_d2uki")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_o1sr3"]
+_surfaces = [{
+"aabb": AABB(-0.385807, -0.271222, -0.0438064, 0.765303, 0.541214, 0.0876127),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAABAAMAAgABAAQABAADAAUABgAAAAIAAgAEAAYABgAEAAUABgAHAAAABgAFAAcA"),
+"name": "Wood",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("D/X///AAAAAAAOHf//8AAAAA4d8AAAAAD/X//w7/AAAoDwAA//8AAP//RyEO/wAAKA8AAAAAAAD//0ch8AAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pyy7y"]
+resource_name = "BreakableObstackle_Plane_005"
+_surfaces = [{
+"aabb": AABB(-0.385807, -0.271222, -0.0438064, 0.765303, 0.541214, 0.0876127),
+"attribute_data": PackedByteArray("CFmrwKpSsIkIWbCJqlKrwGVfF9cIWYq0ZV+KtAhZF9eqUqT5TEyqwqpSqsJMTKT5vymwiUxMq8C/KavATEywiTIHpPm/KarCvymk+TIHqsI="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEA"),
+"material": SubResource("StandardMaterial3D_h6anf"),
+"name": "Wood",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("D/X///AAidcAAOHf//+J1wAA4d8AAInXD/X//w7/idcAAOHfAAA//SgPAAD//z/9KA8AAAAAP/0AAOHf//8//SgPAAAAABPT//9HIQ7/E9P//0ch8AAT0ygPAAD//xPTKA8AAP//f8MP9f//Dv83w///RyEO/9LCAADh3///4sMoDwAAAAD//w/1///wAP//AADh3wAA/////0ch8AD//+vX9ivr1/Yr69f2K+vX9it9QQN9fUEDfX1BA319QQN9vVaDUr1Wg1K9VoNSvVaDUgYABgAGAAYABgAGAAUABgDAQj89hUJ1PQ5D8Tw3Qsc9")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_o1sr3")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ioux8"]
+_surfaces = [{
+"aabb": AABB(-0.170523, -0.136478, -6.84261e-05, 0.35513, 0.271604, 0.000136733),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "Wood",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("PAsAAAAAAAB14P////8AAP//Jkb//wAAAABlvAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_i1vc3"]
+resource_name = "BreakableObstackle_Plane_006"
+_surfaces = [{
+"aabb": AABB(-0.170523, -0.136478, -6.84261e-05, 0.35513, 0.271604, 0.000136733),
+"attribute_data": PackedByteArray("ct8gURjqsGJy37BiGOogUQ=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_h6anf"),
+"name": "Wood",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("PAsAAAAARcV14P////8Ax///Jkb//+TIAABlvAAAKsP3//n/9//5//j/+f/3//n/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ioux8")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_s5efa"]
+_surfaces = [{
+"aabb": AABB(-0.402, -0.251988, -0.0438064, 0.800088, 0.503819, 0.0876129),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAABAAMAAgABAAQABAADAAUABgAAAAIAAgAEAAYABgAEAAUABgAHAAAABgAFAAcA"),
+"name": "Wood",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("VQeuDgAAAAAq+wAA/v8AACr7AAAAAAAAVQeuDv7/AAD//3nx/v8AAAAA/////wAA//958QAAAAAAAP//AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_o0i0l"]
+resource_name = "BreakableObstackle_Plane_007"
+_surfaces = [{
+"aabb": AABB(-0.402, -0.251988, -0.0438064, 0.800088, 0.503819, 0.0876129),
+"attribute_data": PackedByteArray("CFlBw6pSsIkIWbCJqlJBw2VfF9cIWYq0ZV+KtAhZF9eqUqT5TEwTwKpSE8BMTKT5vymwiUxMQcO/KUHDTEywiTIHpPm/KRPAvymk+TIHE8A="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEA"),
+"material": SubResource("StandardMaterial3D_h6anf"),
+"name": "Wood",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("VQeuDgAAOtYq+wAA/v861ir7AAAAADrWVQeuDv7/OtYq+wAAAAABwP//efH+/wHA//958QAAAcAq+wAA/v8BwP//efEAAH7UAAD/////ftQAAP//AAB+1P//efH+/37U//958f7/I8BVB64O/v8hvwAA/////wi+KvsAAP7/SsH//3nxAAD//1UHrg4AAP//KvsAAAAA//8AAP//AAD//8tUZ1bLVGdWy1RnVstUZ1YGfvIDBn7yAwZ+8gMGfvIDTtQnKk7UJypO1CcqTtQnKv9//3//f/9//3//f/9//38cQBvArcCtQANBA8GKwYpB")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_s5efa")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ieubp"]
+_surfaces = [{
+"aabb": AABB(-0.386961, -0.247555, -0.0438064, 0.777835, 0.495267, 0.0876129),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAQADAAIAAAAEAAEAAQAFAAMABAAFAAEABgADAAUAAAAHAAQAAAAGAAcABAAHAAUABgAFAAcA"),
+"name": "Wood",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("c/h79QAAAAAAAFoKAAAAAP//AAAAAAAA//8AAP7/AAD4BP//AAAAAAAAWgr+/wAAc/h79f//AAD4BP////8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_t16vl"]
+resource_name = "BreakableObstackle_Plane_008"
+_surfaces = [{
+"aabb": AABB(-0.386961, -0.247555, -0.0438064, 0.777835, 0.495267, 0.0876129),
+"attribute_data": PackedByteArray("MgcTwL8psIm/KRPAMgewib8pQcNMTKT5vymk+UxMQcOqUhPATEywiapSsIlMTBPAZV+k+QhZF9dlXxfXCFmk+QhZpPmqUkHDCFlBw6pSpPk="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEA"),
+"material": SubResource("StandardMaterial3D_h6anf"),
+"name": "Wood",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("c/h79QAA//8AAFoKAAD/////AAAAAP//+AT//wAA//9z+Hv1//8ovwAAWgr+/xvA+AT/////SsH//wAA/v8IvnP4e/UAAK/U+AT/////r9T4BP//AACv1HP4e/X//6/U+AT//wAAFP8AAFoK/v8U/wAAWgoAABT/+AT/////FP8AAFoKAADv1f//AAD+/+/V//8AAAAA79UAAFoK/v/v1afAqEAWQBXAisGKQQNBA8H/f/9//3//f/9//3//f/9/i9RFKovURSqL1EUqi9RFKvz+fj/8/n4//P5+P/z+fj/3VA9W91QPVvdUD1b3VA9W")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ieubp")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tpite"]
+_surfaces = [{
+"aabb": AABB(-0.0927057, -0.899747, -0.0886215, 0.185411, 1.79949, 0.177243),
+"format": 34359742465,
+"index_count": 39,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAADAAAABQAAAAIABQAEAAAABAAGAAMABQAGAAQABwADAAYABQAHAAYABwABAAMAAgAHAAUAAgABAAcAAQAHAAIA"),
+"name": "Wood.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("eNy9PdhVZj8wf7W9eNy9vdZVZr8wf7W9eNy9vdhVZj8wf7W9eNy9PdZVZr8wf7W9eNy9PdhVZj8wf7U9eNy9vdhVZj8wf7U9eNy9PdZVZr8wf7U9eNy9vdZVZr8wf7U9")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_b0bpb"]
+resource_name = "BreakableObstackle_Plane_009"
+_surfaces = [{
+"aabb": AABB(-0.0927057, -0.899747, -0.0886215, 0.185411, 1.79949, 0.177243),
+"attribute_data": PackedByteArray("qmYNP94A1D6hRuo8lF+4PqpmDT+cX7g+oUbqPNQA1D6qZg0/4AUFP6FG6jx8au4+qmYNP3xq7j6hRuo84AUFP6pmDT+cX7g+oUbqPPD1nT6qZg0/9PWdPqFG6jyUX7g+qmYNP3xq7j6hRuo81ADUPqpmDT/eANQ+oUbqPHxq7j6qZg0/9PWdPqpmDT/eANQ+qmYNP5xfuD6qZg0/fGruPgAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8="),
+"format": 34359742487,
+"index_count": 39,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFQAUABcAFQAXABgA"),
+"material": SubResource("StandardMaterial3D_l0ens"),
+"name": "Wood.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 25,
+"vertex_data": PackedByteArray("eNy9PdhVZj8wf7W9eNy9vdZVZr8wf7W9eNy9vdhVZj8wf7W9eNy9PdZVZr8wf7W9eNy9vdhVZj8wf7U9eNy9PdZVZr8wf7U9eNy9PdhVZj8wf7U9eNy9vdZVZr8wf7U9eNy9vdhVZj8wf7W9eNy9vdZVZr8wf7U9eNy9vdhVZj8wf7U9eNy9vdZVZr8wf7W9eNy9PdhVZj8wf7U9eNy9PdZVZr8wf7W9eNy9PdhVZj8wf7W9eNy9PdZVZr8wf7U9eNy9vdhVZj8wf7U9eNy9PdhVZj8wf7W9eNy9vdhVZj8wf7W9eNy9PdhVZj8wf7U9eNy9vdZVZr8wf7W9eNy9vdZVZr8wf7U9eNy9vdhVZj8wf7W9eNy9PdZVZr8wf7W9eNy9PdZVZr8wf7U9/3//f/9//v//f/9//3/+//9//3//f/7//3//f/9//v///////3//////////f/////////9//////////3///////3//f/7/////f/9//v////9//3/+/////3//f/7/AAD/f/9///8AAP9//3///wAA/3//f///AAD/f/9/////fwAA////v/9/AAD///+//38AAP///7//fwAA////vyDq3ZX///+/IOrdlf///78g6t2V////vyDq3ZX///+/IOrdlf///78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_tpite")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q00si"]
+size = Vector3(1.44708, 1.59973, 0.278748)
+
+[sub_resource type="Animation" id="Animation_hvisq"]
+resource_name = "Breakeble OBstacleAction"
+length = 0.3
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Breakeble OBstacle")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -0.555833, 0.800999, 0.98636, 0.0333333, 1, -0.443764, 0.81133, 0.98636, 0.1, 1, -0.64787, 0.808079, 0.98636)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Breakeble OBstacle")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.0333333, 1, 0, 0, -0.0734407, 0.9973, 0.0666667, 1, 0, 0, -0.00801641, 0.999968, 0.1, 1, 0, 0, 0.0574422, 0.998349)
+tracks/2/type = "position_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("Breakeble OBstacle_001")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, 0.338908, 1.24522, 1.10384)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("Breakeble OBstacle_001")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/4/type = "position_3d"
+tracks/4/imported = true
+tracks/4/enabled = true
+tracks/4/path = NodePath("Breakeble OBstacle_002")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, -0.350673, 1.17988, 1.10384)
+tracks/5/type = "rotation_3d"
+tracks/5/imported = true
+tracks/5/enabled = true
+tracks/5/path = NodePath("Breakeble OBstacle_002")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/6/type = "position_3d"
+tracks/6/imported = true
+tracks/6/enabled = true
+tracks/6/path = NodePath("Breakeble OBstacle_003")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = PackedFloat32Array(0, 1, -0.0200208, 1.22938, 1.15035)
+tracks/7/type = "rotation_3d"
+tracks/7/imported = true
+tracks/7/enabled = true
+tracks/7/path = NodePath("Breakeble OBstacle_003")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/8/type = "position_3d"
+tracks/8/imported = true
+tracks/8/enabled = true
+tracks/8/path = NodePath("Breakeble OBstacle_004")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = PackedFloat32Array(0, 1, 0.341855, 0.631461, 1.10384)
+tracks/9/type = "rotation_3d"
+tracks/9/imported = true
+tracks/9/enabled = true
+tracks/9/path = NodePath("Breakeble OBstacle_004")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/10/type = "position_3d"
+tracks/10/imported = true
+tracks/10/enabled = true
+tracks/10/path = NodePath("Breakeble OBstacle_005")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = PackedFloat32Array(0, 1, -0.339046, 0.653092, 1.10384)
+tracks/11/type = "rotation_3d"
+tracks/11/imported = true
+tracks/11/enabled = true
+tracks/11/path = NodePath("Breakeble OBstacle_005")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/12/type = "position_3d"
+tracks/12/imported = true
+tracks/12/enabled = true
+tracks/12/path = NodePath("Breakeble OBstacle_006")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = PackedFloat32Array(0, 1, 0.530928, 0.800999, 0.98636)
+tracks/13/type = "rotation_3d"
+tracks/13/imported = true
+tracks/13/enabled = true
+tracks/13/path = NodePath("Breakeble OBstacle_006")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_f2v0r"]
+resource_name = "Breakeble OBstacleAction_001"
+length = 0.333333
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Breakeble OBstacle_001")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.338908, 1.24522, 1.10384, 0.0333333, 1, 0.346928, 1.16211, 1.10867, 0.0666667, 1, 0.364054, 0.981573, 1.12218, 0.1, 1, 0.379878, 0.806833, 1.14284, 0.133333, 1, 0.390324, 0.714915, 1.16915, 0.166667, 1, 0.416622, 0.678106, 1.19959, 0.2, 1, 0.48633, 0.642511, 1.23265, 0.233333, 1, 0.627005, 0.554235, 1.26682, 0.266667, 1, 0.926534, 0.385117, 1.29962, 0.3, 1, 1.28863, 0.209936, 1.32468, 0.333333, 1, 1.4646, 0.129206, 1.33466)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Breakeble OBstacle_001")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.0333333, 1, 0.000465309, 0.00689979, 0.0166491, 0.999838, 0.0666667, 1, 0.00246914, 0.0238723, 0.0615679, 0.997814, 0.1, 1, 0.00710077, 0.0450955, 0.127007, 0.990851, 0.133333, 1, 0.00598075, 0.0641449, 0.204085, 0.976831, 0.166667, 1, -0.0193233, 0.0750993, 0.27987, 0.956901, 0.2, 1, -0.0827566, 0.0714201, 0.341316, 0.933571, 0.233333, 1, -0.199351, 0.0510231, 0.376606, 0.90323, 0.266667, 1, -0.391732, 0.0605249, 0.325725, 0.858363, 0.3, 1, -0.586812, 0.139615, 0.23551, 0.762033, 0.333333, 1, -0.666317, 0.19496, 0.196875, 0.692281)
+tracks/2/type = "position_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("Breakeble OBstacle")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, -0.555833, 0.800999, 0.98636)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("Breakeble OBstacle")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/4/type = "position_3d"
+tracks/4/imported = true
+tracks/4/enabled = true
+tracks/4/path = NodePath("Breakeble OBstacle_002")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, -0.350673, 1.17988, 1.10384)
+tracks/5/type = "rotation_3d"
+tracks/5/imported = true
+tracks/5/enabled = true
+tracks/5/path = NodePath("Breakeble OBstacle_002")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/6/type = "position_3d"
+tracks/6/imported = true
+tracks/6/enabled = true
+tracks/6/path = NodePath("Breakeble OBstacle_003")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = PackedFloat32Array(0, 1, -0.0200208, 1.22938, 1.15035)
+tracks/7/type = "rotation_3d"
+tracks/7/imported = true
+tracks/7/enabled = true
+tracks/7/path = NodePath("Breakeble OBstacle_003")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/8/type = "position_3d"
+tracks/8/imported = true
+tracks/8/enabled = true
+tracks/8/path = NodePath("Breakeble OBstacle_004")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = PackedFloat32Array(0, 1, 0.341855, 0.631461, 1.10384)
+tracks/9/type = "rotation_3d"
+tracks/9/imported = true
+tracks/9/enabled = true
+tracks/9/path = NodePath("Breakeble OBstacle_004")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/10/type = "position_3d"
+tracks/10/imported = true
+tracks/10/enabled = true
+tracks/10/path = NodePath("Breakeble OBstacle_005")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = PackedFloat32Array(0, 1, -0.339046, 0.653092, 1.10384)
+tracks/11/type = "rotation_3d"
+tracks/11/imported = true
+tracks/11/enabled = true
+tracks/11/path = NodePath("Breakeble OBstacle_005")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/12/type = "position_3d"
+tracks/12/imported = true
+tracks/12/enabled = true
+tracks/12/path = NodePath("Breakeble OBstacle_006")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = PackedFloat32Array(0, 1, 0.530928, 0.800999, 0.98636)
+tracks/13/type = "rotation_3d"
+tracks/13/imported = true
+tracks/13/enabled = true
+tracks/13/path = NodePath("Breakeble OBstacle_006")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_a2ae4"]
+resource_name = "Breakeble OBstacleAction_002"
+length = 0.333333
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Breakeble OBstacle_002")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -0.350673, 1.17988, 1.10384, 0.0333333, 1, -0.351735, 1.10404, 1.10407, 0.0666667, 1, -0.35917, 0.93623, 1.10572, 0.1, 1, -0.379352, 0.766082, 1.11019, 0.133333, 1, -0.426211, 0.66168, 1.1189, 0.166667, 1, -0.51207, 0.605024, 1.13326, 0.2, 1, -0.640889, 0.556589, 1.15469, 0.233333, 1, -0.816629, 0.476851, 1.18459, 0.266667, 1, -1.02951, 0.344762, 1.24474, 0.3, 1, -1.21479, 0.213189, 1.32018, 0.333333, 1, -1.29399, 0.153478, 1.35726)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Breakeble OBstacle_002")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.0333333, 1, -0.000376327, -0.00360525, -0.0325009, 0.999465, 0.0666667, 1, -0.00227965, -0.014304, -0.111271, 0.993685, 0.1, 1, -0.00596402, -0.0306345, -0.207796, 0.977674, 0.133333, 1, -0.011785, -0.0498892, -0.297339, 0.953395, 0.166667, 1, -0.0209218, -0.0693906, -0.369983, 0.926207, 0.2, 1, -0.036281, -0.088053, -0.420652, 0.90221, 0.233333, 1, -0.0638572, -0.108136, -0.445874, 0.886242, 0.266667, 1, -0.234023, -0.128495, -0.376137, 0.887267, 0.3, 1, -0.512508, -0.198981, -0.262284, 0.793064, 0.333333, 1, -0.638757, -0.255311, -0.219292, 0.691894)
+tracks/2/type = "position_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("Breakeble OBstacle")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, -0.555833, 0.800999, 0.98636)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("Breakeble OBstacle")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/4/type = "position_3d"
+tracks/4/imported = true
+tracks/4/enabled = true
+tracks/4/path = NodePath("Breakeble OBstacle_001")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, 0.338908, 1.24522, 1.10384)
+tracks/5/type = "rotation_3d"
+tracks/5/imported = true
+tracks/5/enabled = true
+tracks/5/path = NodePath("Breakeble OBstacle_001")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/6/type = "position_3d"
+tracks/6/imported = true
+tracks/6/enabled = true
+tracks/6/path = NodePath("Breakeble OBstacle_003")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = PackedFloat32Array(0, 1, -0.0200208, 1.22938, 1.15035)
+tracks/7/type = "rotation_3d"
+tracks/7/imported = true
+tracks/7/enabled = true
+tracks/7/path = NodePath("Breakeble OBstacle_003")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/8/type = "position_3d"
+tracks/8/imported = true
+tracks/8/enabled = true
+tracks/8/path = NodePath("Breakeble OBstacle_004")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = PackedFloat32Array(0, 1, 0.341855, 0.631461, 1.10384)
+tracks/9/type = "rotation_3d"
+tracks/9/imported = true
+tracks/9/enabled = true
+tracks/9/path = NodePath("Breakeble OBstacle_004")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/10/type = "position_3d"
+tracks/10/imported = true
+tracks/10/enabled = true
+tracks/10/path = NodePath("Breakeble OBstacle_005")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = PackedFloat32Array(0, 1, -0.339046, 0.653092, 1.10384)
+tracks/11/type = "rotation_3d"
+tracks/11/imported = true
+tracks/11/enabled = true
+tracks/11/path = NodePath("Breakeble OBstacle_005")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/12/type = "position_3d"
+tracks/12/imported = true
+tracks/12/enabled = true
+tracks/12/path = NodePath("Breakeble OBstacle_006")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = PackedFloat32Array(0, 1, 0.530928, 0.800999, 0.98636)
+tracks/13/type = "rotation_3d"
+tracks/13/imported = true
+tracks/13/enabled = true
+tracks/13/path = NodePath("Breakeble OBstacle_006")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_caoe7"]
+resource_name = "Breakeble OBstacleAction_003"
+length = 0.3
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Breakeble OBstacle_003")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -0.0200208, 1.22938, 1.15035, 0.0333333, 1, -0.0201759, 1.1754, 1.14931, 0.0666667, 1, -0.0212615, 1.03289, 1.14202, 0.1, 1, -0.0242083, 0.831038, 1.12224, 0.133333, 1, -0.0299467, 0.599001, 1.08371, 0.166667, 1, -0.0394075, 0.365956, 1.02019, 0.2, 1, -0.070344, 0.161371, 0.878735, 0.233333, 1, -0.115612, 0.0159129, 0.69681, 0.266667, 1, -0.138793, -0.0394542, 0.603751, 0.3, 1, -0.0725618, 0.00614384, 0.601913)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Breakeble OBstacle_003")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.0333333, 1, 0.0309757, 0.0108936, -0.00556299, 0.999445, 0.0666667, 1, 0.111766, 0.0378119, -0.0233824, 0.99274, 0.1, 1, 0.222622, 0.070504, -0.0557454, 0.970753, 0.133333, 1, 0.342535, 0.0985685, -0.101623, 0.928777, 0.166667, 1, 0.452278, 0.11489, -0.154643, 0.870822, 0.2, 1, 0.538003, 0.118536, -0.204686, 0.809077, 0.233333, 1, 0.592351, 0.114848, -0.241154, 0.760115, 0.266667, 1, 0.611526, 0.112068, -0.255055, 0.740556, 0.3, 1, 0.613558, 0.162654, -0.166366, 0.754594)
+tracks/2/type = "position_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("Breakeble OBstacle")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, -0.555833, 0.800999, 0.98636)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("Breakeble OBstacle")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/4/type = "position_3d"
+tracks/4/imported = true
+tracks/4/enabled = true
+tracks/4/path = NodePath("Breakeble OBstacle_001")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, 0.338908, 1.24522, 1.10384)
+tracks/5/type = "rotation_3d"
+tracks/5/imported = true
+tracks/5/enabled = true
+tracks/5/path = NodePath("Breakeble OBstacle_001")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/6/type = "position_3d"
+tracks/6/imported = true
+tracks/6/enabled = true
+tracks/6/path = NodePath("Breakeble OBstacle_002")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = PackedFloat32Array(0, 1, -0.350673, 1.17988, 1.10384)
+tracks/7/type = "rotation_3d"
+tracks/7/imported = true
+tracks/7/enabled = true
+tracks/7/path = NodePath("Breakeble OBstacle_002")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/8/type = "position_3d"
+tracks/8/imported = true
+tracks/8/enabled = true
+tracks/8/path = NodePath("Breakeble OBstacle_004")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = PackedFloat32Array(0, 1, 0.341855, 0.631461, 1.10384)
+tracks/9/type = "rotation_3d"
+tracks/9/imported = true
+tracks/9/enabled = true
+tracks/9/path = NodePath("Breakeble OBstacle_004")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/10/type = "position_3d"
+tracks/10/imported = true
+tracks/10/enabled = true
+tracks/10/path = NodePath("Breakeble OBstacle_005")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = PackedFloat32Array(0, 1, -0.339046, 0.653092, 1.10384)
+tracks/11/type = "rotation_3d"
+tracks/11/imported = true
+tracks/11/enabled = true
+tracks/11/path = NodePath("Breakeble OBstacle_005")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/12/type = "position_3d"
+tracks/12/imported = true
+tracks/12/enabled = true
+tracks/12/path = NodePath("Breakeble OBstacle_006")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = PackedFloat32Array(0, 1, 0.530928, 0.800999, 0.98636)
+tracks/13/type = "rotation_3d"
+tracks/13/imported = true
+tracks/13/enabled = true
+tracks/13/path = NodePath("Breakeble OBstacle_006")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_chwi4"]
+resource_name = "Breakeble OBstacleAction_004"
+length = 0.333333
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Breakeble OBstacle_004")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.341855, 0.631461, 1.10384, 0.0666667, 1, 0.341855, 0.631461, 1.10384, 0.1, 1, 0.343989, 0.520162, 1.11237, 0.133333, 1, 0.358926, 0.324182, 1.1388, 0.166667, 1, 0.443918, 0.2076, 1.18439, 0.2, 1, 0.631685, 0.163293, 1.25039, 0.233333, 1, 0.898232, 0.141339, 1.33805, 0.266667, 1, 1.20644, 0.104215, 1.44222, 0.3, 1, 1.4667, 0.0639943, 1.53205, 0.333333, 1, 1.57629, 0.045149, 1.57027)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Breakeble OBstacle_004")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.0666667, 1, 0, 0, 0, 1, 0.1, 1, -0.047728, 0.0632884, 0.0970537, 0.992118, 0.133333, 1, -0.116489, 0.168397, 0.300304, 0.931606, 0.166667, 1, -0.143774, 0.223995, 0.477812, 0.837169, 0.2, 1, -0.152676, 0.217908, 0.590622, 0.761821, 0.233333, 1, -0.194935, 0.169518, 0.639462, 0.724122, 0.266667, 1, -0.336193, 0.212702, 0.602331, 0.692047, 0.3, 1, -0.500699, 0.35457, 0.492313, 0.61742, 0.333333, 1, -0.567954, 0.429807, 0.417162, 0.564509)
+tracks/2/type = "position_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("Breakeble OBstacle")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, -0.555833, 0.800999, 0.98636)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("Breakeble OBstacle")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/4/type = "position_3d"
+tracks/4/imported = true
+tracks/4/enabled = true
+tracks/4/path = NodePath("Breakeble OBstacle_001")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, 0.338908, 1.24522, 1.10384)
+tracks/5/type = "rotation_3d"
+tracks/5/imported = true
+tracks/5/enabled = true
+tracks/5/path = NodePath("Breakeble OBstacle_001")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/6/type = "position_3d"
+tracks/6/imported = true
+tracks/6/enabled = true
+tracks/6/path = NodePath("Breakeble OBstacle_002")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = PackedFloat32Array(0, 1, -0.350673, 1.17988, 1.10384)
+tracks/7/type = "rotation_3d"
+tracks/7/imported = true
+tracks/7/enabled = true
+tracks/7/path = NodePath("Breakeble OBstacle_002")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/8/type = "position_3d"
+tracks/8/imported = true
+tracks/8/enabled = true
+tracks/8/path = NodePath("Breakeble OBstacle_003")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = PackedFloat32Array(0, 1, -0.0200208, 1.22938, 1.15035)
+tracks/9/type = "rotation_3d"
+tracks/9/imported = true
+tracks/9/enabled = true
+tracks/9/path = NodePath("Breakeble OBstacle_003")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/10/type = "position_3d"
+tracks/10/imported = true
+tracks/10/enabled = true
+tracks/10/path = NodePath("Breakeble OBstacle_005")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = PackedFloat32Array(0, 1, -0.339046, 0.653092, 1.10384)
+tracks/11/type = "rotation_3d"
+tracks/11/imported = true
+tracks/11/enabled = true
+tracks/11/path = NodePath("Breakeble OBstacle_005")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/12/type = "position_3d"
+tracks/12/imported = true
+tracks/12/enabled = true
+tracks/12/path = NodePath("Breakeble OBstacle_006")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = PackedFloat32Array(0, 1, 0.530928, 0.800999, 0.98636)
+tracks/13/type = "rotation_3d"
+tracks/13/imported = true
+tracks/13/enabled = true
+tracks/13/path = NodePath("Breakeble OBstacle_006")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_nai5v"]
+resource_name = "Breakeble OBstacleAction_005"
+length = 0.333333
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Breakeble OBstacle_005")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -0.339046, 0.653092, 1.10384, 0.0666667, 1, -0.339046, 0.653092, 1.10384, 0.1, 1, -0.358892, 0.543981, 1.1177, 0.133333, 1, -0.410745, 0.362883, 1.15562, 0.166667, 1, -0.488236, 0.270535, 1.21212, 0.2, 1, -0.605622, 0.242176, 1.2817, 0.233333, 1, -0.782316, 0.218908, 1.35887, 0.266667, 1, -1.01787, 0.159124, 1.43589, 0.3, 1, -1.23237, 0.0903717, 1.49602, 0.333333, 1, -1.32604, 0.0574903, 1.52029)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Breakeble OBstacle_005")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.0666667, 1, 0, 0, 0, 1, 0.1, 1, -0.020557, -0.0391966, -0.0925205, 0.994727, 0.133333, 1, -0.0528965, -0.112299, -0.26154, 0.957177, 0.166667, 1, -0.0872287, -0.170624, -0.377546, 0.905946, 0.2, 1, -0.146444, -0.193349, -0.443821, 0.862666, 0.233333, 1, -0.247767, -0.158621, -0.481769, 0.825439, 0.266667, 1, -0.438352, -0.11045, -0.41365, 0.79028, 0.3, 1, -0.625728, -0.124563, -0.24538, 0.729888, 0.333333, 1, -0.690746, -0.151053, -0.147495, 0.691591)
+tracks/2/type = "position_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("Breakeble OBstacle")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, -0.555833, 0.800999, 0.98636)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("Breakeble OBstacle")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/4/type = "position_3d"
+tracks/4/imported = true
+tracks/4/enabled = true
+tracks/4/path = NodePath("Breakeble OBstacle_001")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, 0.338908, 1.24522, 1.10384)
+tracks/5/type = "rotation_3d"
+tracks/5/imported = true
+tracks/5/enabled = true
+tracks/5/path = NodePath("Breakeble OBstacle_001")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/6/type = "position_3d"
+tracks/6/imported = true
+tracks/6/enabled = true
+tracks/6/path = NodePath("Breakeble OBstacle_002")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = PackedFloat32Array(0, 1, -0.350673, 1.17988, 1.10384)
+tracks/7/type = "rotation_3d"
+tracks/7/imported = true
+tracks/7/enabled = true
+tracks/7/path = NodePath("Breakeble OBstacle_002")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/8/type = "position_3d"
+tracks/8/imported = true
+tracks/8/enabled = true
+tracks/8/path = NodePath("Breakeble OBstacle_003")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = PackedFloat32Array(0, 1, -0.0200208, 1.22938, 1.15035)
+tracks/9/type = "rotation_3d"
+tracks/9/imported = true
+tracks/9/enabled = true
+tracks/9/path = NodePath("Breakeble OBstacle_003")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/10/type = "position_3d"
+tracks/10/imported = true
+tracks/10/enabled = true
+tracks/10/path = NodePath("Breakeble OBstacle_004")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = PackedFloat32Array(0, 1, 0.341855, 0.631461, 1.10384)
+tracks/11/type = "rotation_3d"
+tracks/11/imported = true
+tracks/11/enabled = true
+tracks/11/path = NodePath("Breakeble OBstacle_004")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/12/type = "position_3d"
+tracks/12/imported = true
+tracks/12/enabled = true
+tracks/12/path = NodePath("Breakeble OBstacle_006")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = PackedFloat32Array(0, 1, 0.530928, 0.800999, 0.98636)
+tracks/13/type = "rotation_3d"
+tracks/13/imported = true
+tracks/13/enabled = true
+tracks/13/path = NodePath("Breakeble OBstacle_006")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_vyffb"]
+resource_name = "Breakeble OBstacleAction_006"
+length = 0.133333
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Breakeble OBstacle_006")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.530928, 0.800999, 0.98636, 0.0333333, 1, 0.469833, 0.805824, 0.98636, 0.0666667, 1, 0.490736, 0.805663, 0.98636, 0.1, 1, 0.558067, 0.804539, 0.98636, 0.133333, 1, 0.628864, 0.792739, 0.98636)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Breakeble OBstacle_006")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.0333333, 1, -0.00501499, 0.0102539, 0.0750118, 0.997117, 0.0666667, 1, -0.00555281, 0.0106616, 0.016238, 0.999796, 0.1, 1, -0.00608257, 0.011135, -0.0713652, 0.99737, 0.133333, 1, -0.00584723, 0.0112604, -0.0923088, 0.99565)
+tracks/2/type = "position_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("Breakeble OBstacle")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, -0.555833, 0.800999, 0.98636)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("Breakeble OBstacle")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/4/type = "position_3d"
+tracks/4/imported = true
+tracks/4/enabled = true
+tracks/4/path = NodePath("Breakeble OBstacle_001")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, 0.338908, 1.24522, 1.10384)
+tracks/5/type = "rotation_3d"
+tracks/5/imported = true
+tracks/5/enabled = true
+tracks/5/path = NodePath("Breakeble OBstacle_001")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/6/type = "position_3d"
+tracks/6/imported = true
+tracks/6/enabled = true
+tracks/6/path = NodePath("Breakeble OBstacle_002")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = PackedFloat32Array(0, 1, -0.350673, 1.17988, 1.10384)
+tracks/7/type = "rotation_3d"
+tracks/7/imported = true
+tracks/7/enabled = true
+tracks/7/path = NodePath("Breakeble OBstacle_002")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/8/type = "position_3d"
+tracks/8/imported = true
+tracks/8/enabled = true
+tracks/8/path = NodePath("Breakeble OBstacle_003")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = PackedFloat32Array(0, 1, -0.0200208, 1.22938, 1.15035)
+tracks/9/type = "rotation_3d"
+tracks/9/imported = true
+tracks/9/enabled = true
+tracks/9/path = NodePath("Breakeble OBstacle_003")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/10/type = "position_3d"
+tracks/10/imported = true
+tracks/10/enabled = true
+tracks/10/path = NodePath("Breakeble OBstacle_004")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = PackedFloat32Array(0, 1, 0.341855, 0.631461, 1.10384)
+tracks/11/type = "rotation_3d"
+tracks/11/imported = true
+tracks/11/enabled = true
+tracks/11/path = NodePath("Breakeble OBstacle_004")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/12/type = "position_3d"
+tracks/12/imported = true
+tracks/12/enabled = true
+tracks/12/path = NodePath("Breakeble OBstacle_005")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = PackedFloat32Array(0, 1, -0.339046, 0.653092, 1.10384)
+tracks/13/type = "rotation_3d"
+tracks/13/imported = true
+tracks/13/enabled = true
+tracks/13/path = NodePath("Breakeble OBstacle_005")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_drvsi"]
+_data = {
+&"Breakeble OBstacleAction": SubResource("Animation_hvisq"),
+&"Breakeble OBstacleAction_001": SubResource("Animation_f2v0r"),
+&"Breakeble OBstacleAction_002": SubResource("Animation_a2ae4"),
+&"Breakeble OBstacleAction_003": SubResource("Animation_caoe7"),
+&"Breakeble OBstacleAction_004": SubResource("Animation_chwi4"),
+&"Breakeble OBstacleAction_005": SubResource("Animation_nai5v"),
+&"Breakeble OBstacleAction_006": SubResource("Animation_vyffb")
+}
+
+[node name="BreakableObstackle1" type="StaticBody3D" groups=["Enemy"]]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_hnq1g")
+
+[node name="Breakeble OBstacle" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.884344, 0, 0, 0, 0.884344, 0, 0, 0, 0.884344, -0.555833, 0.800999, 0.98636)
+mesh = SubResource("ArrayMesh_hnq1g")
+skeleton = NodePath("")
+
+[node name="Breakeble OBstacle_001" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.884344, 0, 0, 0, 0.884344, 0, 0, 0, 0.884344, 0.338908, 1.24522, 1.10384)
+mesh = SubResource("ArrayMesh_nln82")
+skeleton = NodePath("")
+
+[node name="Breakeble OBstacle_002" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.884344, 0, 0, 0, 0.884344, 0, 0, 0, 0.884344, -0.350673, 1.17988, 1.10384)
+mesh = SubResource("ArrayMesh_pyy7y")
+skeleton = NodePath("")
+
+[node name="Breakeble OBstacle_003" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.884344, 0, 0, 0, 0.884344, 0, 0, 0, 0.884344, -0.0200208, 1.22938, 1.15035)
+mesh = SubResource("ArrayMesh_i1vc3")
+skeleton = NodePath("")
+
+[node name="Breakeble OBstacle_004" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.884344, 0, 0, 0, 0.884344, 0, 0, 0, 0.884344, 0.341855, 0.631461, 1.10384)
+mesh = SubResource("ArrayMesh_o0i0l")
+skeleton = NodePath("")
+
+[node name="Breakeble OBstacle_005" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.884344, 0, 0, 0, 0.884344, 0, 0, 0, 0.884344, -0.339046, 0.653092, 1.10384)
+mesh = SubResource("ArrayMesh_t16vl")
+skeleton = NodePath("")
+
+[node name="Breakeble OBstacle_006" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.884344, 0, 0, 0, 0.884344, 0, 0, 0, 0.884344, 0.530928, 0.800999, 0.98636)
+mesh = SubResource("ArrayMesh_b0bpb")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." groups=["Enemy"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00491333, 0.822449, 1.0191)
+shape = SubResource("BoxShape3D_q00si")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_drvsi")
+}

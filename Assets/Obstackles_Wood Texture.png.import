@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chqrj7hnypfm3"
-path.s3tc="res://.godot/imported/Obstackles_Wood Texture.png-05afb1e688bd7056648b5e82c06d74c1.s3tc.ctex"
-path.etc2="res://.godot/imported/Obstackles_Wood Texture.png-05afb1e688bd7056648b5e82c06d74c1.etc2.ctex"
+path.s3tc="res://.godot/imported/Obstackles_Wood Texture.png-4a71f2dcf3b8c0e75b399042869c7b6b.s3tc.ctex"
+path.etc2="res://.godot/imported/Obstackles_Wood Texture.png-4a71f2dcf3b8c0e75b399042869c7b6b.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -15,8 +15,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://LVLS/Obstackles_Wood Texture.png"
-dest_files=["res://.godot/imported/Obstackles_Wood Texture.png-05afb1e688bd7056648b5e82c06d74c1.s3tc.ctex", "res://.godot/imported/Obstackles_Wood Texture.png-05afb1e688bd7056648b5e82c06d74c1.etc2.ctex"]
+source_file="res://Assets/Obstackles_Wood Texture.png"
+dest_files=["res://.godot/imported/Obstackles_Wood Texture.png-4a71f2dcf3b8c0e75b399042869c7b6b.s3tc.ctex", "res://.godot/imported/Obstackles_Wood Texture.png-4a71f2dcf3b8c0e75b399042869c7b6b.etc2.ctex"]
 
 [params]
 

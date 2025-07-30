@@ -1,4 +1,26 @@
-res://Decorations/Decoration2-1.tscn
+res://player.tscn
 res://Decorations/sewerwater.gdshader
 res://Assets/MAIN FILES/ocean.gdshader
 res://Decorations/Water_test.gdshader
+res://trampoline.tscn
+res://enemy.tscn
+res://Decorations/Decoration2-1.tscn
+res://LVLS/Lvl_1.tscn
+res://Obstacles/ConesBlock.tscn
+res://terrains/terrain2.tscn
+res://terrains/terrain.tscn
+res://Assets/sewerwater.gdshader
+res://Assets/Water_test.gdshader
+res://terrain_controller.gd
+res://player.gd
+res://Trampoline.gd
+res://Assets/MAIN FILES/Platform.tscn
+res://Assets/TilesLibrary.tres
+res://Obstacles/Blocks.tscn
+res://Assets/Decoration1.tscn
+res://Assets/Decoration2.tscn
+res://Assets/MAIN FILES/PlatformwithBridge.tscn
+res://Assets/MAIN FILES/Spikes.tscn
+res://Assets/MAIN FILES/BreakableObstackle.tscn
+res://Assets/MAIN FILES/BreakableObstackle1.tscn
+res://enemy.gd

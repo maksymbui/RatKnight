@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=4 uid="uid://dyvbs62im41bw"]
+[gd_scene load_steps=7 format=4 uid="uid://dyvbs62im41bw"]
 
 [ext_resource type="Texture2D" uid="uid://ccyl6pw121k27" path="res://Assets/MAIN FILES/Wood Texture.png" id="1_n6j73"]
 
@@ -45,9 +45,18 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_tgrgq")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_n6j73"]
+size = Vector3(1.41638, 1.95898, 2.20795)
+
 [node name="Platform" type="Node3D"]
 
 [node name="Bridge platform" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.884344, 0, 0, 0, 0.884344, 0, 0, 0, 0.884344, 0, 1.80763, 0)
 mesh = SubResource("ArrayMesh_gu2oi")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000183105, 0.843856, -0.0015564)
+shape = SubResource("BoxShape3D_n6j73")

@@ -4,7 +4,7 @@ extends CharacterBody3D
 var target_lane: int = 1
 var LANES: Array = [-3, 0, 3]
 var gravity_pull: float = 30
-var jump_velocity: float = 13.5
+var jump_velocity: float = 10.5
 var target_velocity: Vector3 = Vector3.ZERO
 var state: String = "run"
 

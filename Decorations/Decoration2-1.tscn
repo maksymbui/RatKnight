@@ -1,6 +1,6 @@
-[gd_scene load_steps=19 format=3 uid="uid://b4pol7c3i4ppr"]
+[gd_scene load_steps=20 format=3 uid="uid://b4pol7c3i4ppr"]
 
-[ext_resource type="Shader" uid="uid://cvkxwylovjdse" path="res://Decorations/sewerwater.gdshader" id="2_ucvby"]
+[ext_resource type="Shader" uid="uid://cvkxwylovjdse" path="res://Assets/sewerwater.gdshader" id="2_ucvby"]
 [ext_resource type="PackedScene" uid="uid://co62tmql4l836" path="res://Assets/MAIN FILES/Torch.glb" id="3_plmkv"]
 [ext_resource type="PackedScene" uid="uid://cf8oavnxw2jac" path="res://Assets/MAIN FILES/SewerWall.glb" id="4_brry2"]
 [ext_resource type="Shader" uid="uid://r144ejup4ed7" path="res://Assets/MAIN FILES/ocean.gdshader" id="4_plmkv"]
@@ -122,6 +122,9 @@ shader_parameter/normal_map_scale = Vector2(0.1, 0.1)
 material = SubResource("ShaderMaterial_pxu6x")
 size = Vector2(40, 100)
 
+[sub_resource type="PlaneMesh" id="PlaneMesh_plmkv"]
+size = Vector2(50, 100)
+
 [node name="Decoration2-1" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -212,6 +215,7 @@ transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, 19.3164, 4.
 amount = 50
 speed_scale = 0.7
 randomness = 0.4
+local_coords = true
 process_material = SubResource("ParticleProcessMaterial_g0kty")
 draw_pass_1 = SubResource("SphereMesh_gd0al")
 
@@ -220,6 +224,7 @@ transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, 19.3164, 4.
 amount = 50
 speed_scale = 0.7
 randomness = 0.4
+local_coords = true
 process_material = SubResource("ParticleProcessMaterial_g0kty")
 draw_pass_1 = SubResource("SphereMesh_gd0al")
 
@@ -228,6 +233,7 @@ transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, 19.3164, 4.
 amount = 50
 speed_scale = 0.7
 randomness = 0.4
+local_coords = true
 process_material = SubResource("ParticleProcessMaterial_g0kty")
 draw_pass_1 = SubResource("SphereMesh_gd0al")
 
@@ -236,6 +242,7 @@ transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, -18.929, 5.
 amount = 50
 speed_scale = 0.7
 randomness = 0.4
+local_coords = true
 process_material = SubResource("ParticleProcessMaterial_g0kty")
 draw_pass_1 = SubResource("SphereMesh_gd0al")
 
@@ -244,6 +251,7 @@ transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, -18.929, 5.
 amount = 50
 speed_scale = 0.7
 randomness = 0.4
+local_coords = true
 process_material = SubResource("ParticleProcessMaterial_g0kty")
 draw_pass_1 = SubResource("SphereMesh_gd0al")
 
@@ -252,6 +260,7 @@ transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, -18.929, 5.
 amount = 50
 speed_scale = 0.7
 randomness = 0.4
+local_coords = true
 process_material = SubResource("ParticleProcessMaterial_g0kty")
 draw_pass_1 = SubResource("SphereMesh_gd0al")
 
@@ -260,6 +269,7 @@ transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, -18.9289, 5
 amount = 50
 speed_scale = 0.7
 randomness = 0.4
+local_coords = true
 process_material = SubResource("ParticleProcessMaterial_g0kty")
 draw_pass_1 = SubResource("SphereMesh_gd0al")
 
@@ -277,3 +287,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.334761, 0)
 mesh = SubResource("PlaneMesh_3e7ej")
 
 [node name="SewerWall" parent="." instance=ExtResource("4_brry2")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 19.2256, 0)
+mesh = SubResource("PlaneMesh_plmkv")
