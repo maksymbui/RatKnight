@@ -1,13 +1,4 @@
+res://Decorations/Decoration2-1.tscn
 res://Decorations/sewerwater.gdshader
 res://Assets/MAIN FILES/ocean.gdshader
 res://Decorations/Water_test.gdshader
-res://Assets/MAIN FILES/rat_mob.tscn
-res://Assets/MAIN FILES/rat_mob.gdshader
-res://player.tscn
-res://trampoline.tscn
-res://enemy.tscn
-res://Decorations/Decoration2-1.tscn
-res://LVLS/Lvl_1.tscn
-res://Obstacles/ConesBlock.tscn
-res://terrains/terrain2.tscn
-res://terrains/terrain.tscn

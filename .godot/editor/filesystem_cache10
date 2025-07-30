@@ -1,15 +1,15 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1753864533
+::res://::1753870578
 axe.tscn::PackedScene/PackedScene::2942513029959030203::1751796638::0::1::::<><><>0<>0<><>::uid://crgbintelfr68::::res://Assets/RatKnightGirl/Ratknightgirl_barbarian_texture.png
 enemy.gd::GDScript/GDScript::2486583811865891307::1743585783::0::1::::<>CharacterBody3D<><>0<>0<><>::
-enemy.tscn::PackedScene/PackedScene::2724729447980646117::1753749551::0::1::::<><><>0<>0<><>::uid://bborw36ybluox::::res://enemy.gd
+enemy.tscn::PackedScene/PackedScene::2724729447980646117::1753868343::0::1::::<><><>0<>0<><>::uid://bborw36ybluox::::res://enemy.gd
 export_presets.cfg::TextFile/TextFile::-1::1743585783::0::1::::<><><>0<>0<><>::
 hud.gd::GDScript/GDScript::2519260369437586651::1753740112::0::1::::<>CanvasLayer<><>0<>0<><>::
 hud.tscn::PackedScene/PackedScene::2121368826807687341::1753740112::0::1::::<><><>0<>0<><>::uid://bb5l3535mtp1t::::res://hud.gd
 Obstackles.glb::PackedScene/PackedScene::4905249816829346662::1753740633::1753740633::1::::<><><>0<>0<>0d28a734e920f1db754a60e41a5f753c<>res://.godot/imported/Obstackles.glb-ad918b3f8616dba62c284b4e3811b16a.scn::uid://boc7j0i02t13v::::res://Obstackles_Wood Texture.png
 Obstackles_Wood Texture.png::CompressedTexture2D/CompressedTexture2D::3375153592662278301::1753740633::1753740634::1::::<><><>0<>0<>ddd0461f978a6e7391e3a15519fe76d2<>res://.godot/imported/Obstackles_Wood Texture.png-824839bf23ce6d4c5c0525a4f7d19f81.s3tc.ctex<*>res://.godot/imported/Obstackles_Wood Texture.png-824839bf23ce6d4c5c0525a4f7d19f81.etc2.ctex::
 player.gd::GDScript/GDScript::6956049715423041239::1753740112::0::1::::<>CharacterBody3D<><>0<>0<><>::
-player.tscn::PackedScene/PackedScene::4389147185030416742::1753749550::0::1::::<><><>0<>0<><>::uid://c6dtefvt2mdxn::::res://player.gd<>uid://bh6m03hekmpnf::::res://axe.tscn<>uid://bdl2e4wtuvj1s::::res://Assets/RatKnightGirl/Ratknightgirl(2)_Hair.png<>uid://y70u0xlbig41::::res://Assets/RatKnightGirl/Ratknightgirl(2)_Skin.png<>uid://bw082trwwuwsl::::res://Assets/RatKnightGirl/Ratknightgirl(2)_Armor.png
+player.tscn::PackedScene/PackedScene::4389147185030416742::1753868343::0::1::::<><><>0<>0<><>::uid://c6dtefvt2mdxn::::res://player.gd<>uid://bh6m03hekmpnf::::res://axe.tscn<>uid://bdl2e4wtuvj1s::::res://Assets/RatKnightGirl/Ratknightgirl(2)_Hair.png<>uid://y70u0xlbig41::::res://Assets/RatKnightGirl/Ratknightgirl(2)_Skin.png<>uid://bw082trwwuwsl::::res://Assets/RatKnightGirl/Ratknightgirl(2)_Armor.png
 ratknightgirl.tscn::PackedScene/PackedScene::6250845392026709407::1753740112::0::1::::<><><>0<>0<><>::uid://crgbintelfr68::::res://Assets/RatKnightGirl/Ratknightgirl_barbarian_texture.png<>uid://bh6m03hekmpnf::::res://axe.tscn<>uid://ckotek8a10fwk::::res://Assets/RatKnightGirl/Ratknightgirl_Hair.png<>uid://cxbw7udu4miu::::res://Assets/RatKnightGirl/Ratknightgirl_Skin.png<>uid://bunytvr6ct432::::res://Assets/RatKnightGirl/Ratknightgirl_Armor.png
 README.md::TextFile/TextFile::-1::1743549906::0::1::::<><><>0<>0<><>::
 SewerWall.glb::PackedScene/PackedScene::8002914281788249914::1744144499::1744145155::1::::<><><>0<>0<>25e3660b90a212225c58cff183f84fa4<>res://.godot/imported/SewerWall.glb-f236ded04f3b4b8ede78f6fb11339350.scn::
@@ -17,7 +17,7 @@ Spikes.glb::PackedScene/PackedScene::8028377076875528907::1744156814::1744156835
 terrain_controller.gd::GDScript/GDScript::5800221492255507618::1753740112::0::1::::<>Node3D<><>0<>0<><>::
 terrain_controller.tscn::PackedScene/PackedScene::937324888930678759::1751796639::0::1::::<><><>0<>0<><>::uid://covw2ho81mdwk::::res://terrain_controller.gd<>uid://cthx1igt523a1::::res://terrains/terrain.tscn<>uid://cm40f8wgwwt0p::::res://terrains/terrain2.tscn
 Trampoline.gd::GDScript/GDScript::3944860723234337179::1753740111::0::1::::<>Area3D<><>0<>0<><>::
-trampoline.tscn::PackedScene/PackedScene::6726453355591182673::1753749551::0::1::::<><><>0<>0<><>::uid://bwg6jrnx1ck6f::::res://Trampoline.gd
+trampoline.tscn::PackedScene/PackedScene::6726453355591182673::1753868343::0::1::::<><><>0<>0<><>::uid://bwg6jrnx1ck6f::::res://Trampoline.gd
 world.gd::GDScript/GDScript::9184545716957575550::1753740112::0::1::::<>Node3D<><>0<>0<><>::
 world.tscn::PackedScene/PackedScene::2264619606477501614::1753740112::0::1::::<><><>0<>0<><>::uid://d34cej0ontcpq::::res://world.gd<>uid://b3seu3qo7qgao::::res://player.tscn<>uid://nmbusgwu6tqd::::res://terrain_controller.tscn<>uid://5huvtv7q3d1n::::res://hud.tscn
 ::res://Assets/::1753740725
@@ -389,23 +389,26 @@ wall_gateDoor.gltf.glb::PackedScene/PackedScene::6633827575700821338::1743549906
 wall_window.gltf.glb::PackedScene/PackedScene::8521570941082976157::1743549906::1743550372::1::::<><><>0<>0<>136ddd45d99ef35256659d64de7cc5b0<>res://.godot/imported/wall_window.gltf.glb-389660cf07a2f9e192691556cd571580.scn::
 wall_windowGate.gltf.glb::PackedScene/PackedScene::1411730383189405540::1743549906::1743550372::1::::<><><>0<>0<>b55cfd3200e50bace06df8880f5f9724<>res://.godot/imported/wall_windowGate.gltf.glb-f05b68596b35c1f9746278dcebc0dbc1.scn::
 weaponRack.gltf.glb::PackedScene/PackedScene::8563729037243118757::1743549906::1743550373::1::::<><><>0<>0<>8db984f98c0e72c39a4f1bf415f2c6ae<>res://.godot/imported/weaponRack.gltf.glb-26f395ac1933b168145c9db515b94bff.scn::
-::res://Assets/MAIN FILES/::1753864564
+::res://Assets/MAIN FILES/::1753870583
 29fcb57d9ac8363375c3050d5c4933ac.jpg::CompressedTexture2D/CompressedTexture2D::3264463834559895068::1753821910::1753821918::1::::<><><>0<>0<>925548aed8701227f7a0e529abc8dc73<>res://.godot/imported/29fcb57d9ac8363375c3050d5c4933ac.jpg-a4542f751757a340933922e36336ee22.s3tc.ctex<*>res://.godot/imported/29fcb57d9ac8363375c3050d5c4933ac.jpg-a4542f751757a340933922e36336ee22.etc2.ctex::
 BreakableObstackle.tscn::PackedScene/PackedScene::3886716650447622005::1753798593::0::1::::<><><>0<>0<><>::uid://ccyl6pw121k27::::res://Assets/MAIN FILES/Wood Texture.png
-ocean.gdshader::Shader::1248696969192112558::1753822631::0::1::::<><><>0<>0<><>::
+ocean.gdshader::Shader::1248696969192112558::1753870165::0::1::::<><><>0<>0<><>::
 Platform.gdshader::Shader/Shader::1565486185612777979::1753746382::0::1::::<><><>0<>0<><>::
 Platform.tscn::PackedScene/PackedScene::8887240762824653320::1753798688::0::1::::<><><>0<>0<><>::uid://ccyl6pw121k27::::res://Assets/MAIN FILES/Wood Texture.png
 PlatformwithBridge.tscn::PackedScene/PackedScene::822862569809345321::1753746804::0::1::::<><><>0<>0<><>::uid://ccyl6pw121k27::::res://Assets/MAIN FILES/Wood Texture.png
-rat_mob.glb::PackedScene::3691470901855698773::1753864564::1753864566::1::::<><><>0<>0<>1adb8073ee3af9261f83645b7c954c65<>res://.godot/imported/rat_mob.glb-60f56f951e95cee88b28c2a8edfc0575.scn::uid://dystkmlvxwc8a::::res://Assets/MAIN FILES/rat_mob_RatGuard_UV.png
-rat_mob_RatGuard_UV.png::CompressedTexture2D::8882125227025566186::1753864565::1753864566::1::::<><><>0<>0<>7e951ce6ec1153980e9cbeb3dc1caa8e<>res://.godot/imported/rat_mob_RatGuard_UV.png-57263c644b6eb1aaeb0d90c60b593bd0.s3tc.ctex<*>res://.godot/imported/rat_mob_RatGuard_UV.png-57263c644b6eb1aaeb0d90c60b593bd0.etc2.ctex::
-SewerWall.tscn::PackedScene::2724851458287295286::1753818083::0::1::::<><><>0<>0<><>::uid://cfkd721k21wlp::::res://Assets/MAIN FILES/SewerWall_Wall_texture.png<>uid://bwrjopmr50dg8::::res://Assets/MAIN FILES/SewerWall_Wall_texture_Normal.png
-SewerWall_Wall_texture.png::CompressedTexture2D/CompressedTexture2D::5144670118287069597::1753754972::1753754973::1::::<><><>0<>0<>ee249f1e73cb7e18b41073db6c8cd325<>res://.godot/imported/SewerWall_Wall_texture.png-7a0b7633b0d18e696bf76110fa754c56.s3tc.ctex<*>res://.godot/imported/SewerWall_Wall_texture.png-7a0b7633b0d18e696bf76110fa754c56.etc2.ctex::
-SewerWall_Wall_texture_Normal.png::CompressedTexture2D/CompressedTexture2D::3966241926799780161::1753754972::1753754973::1::::<><><>0<>0<>2b1693eec9ca5092ea5ee95ef22f46b5<>res://.godot/imported/SewerWall_Wall_texture_Normal.png-9495d9aa9c0c926247527f769075d838.s3tc.ctex<*>res://.godot/imported/SewerWall_Wall_texture_Normal.png-9495d9aa9c0c926247527f769075d838.etc2.ctex::
+rat_mob.gdshader::Shader/Shader::6735166289414908839::1753867782::0::1::::<><><>0<>0<><>::
+rat_mob.glb::PackedScene/PackedScene::3691470901855698773::1753864564::1753864566::1::::<><><>0<>0<>1adb8073ee3af9261f83645b7c954c65<>res://.godot/imported/rat_mob.glb-60f56f951e95cee88b28c2a8edfc0575.scn::uid://dystkmlvxwc8a::::res://Assets/MAIN FILES/rat_mob_RatGuard_UV.png
+rat_mob.tscn::PackedScene/PackedScene::5235844557008463078::1753868305::0::1::::<><><>0<>0<><>::uid://dystkmlvxwc8a::::res://Assets/MAIN FILES/rat_mob_RatGuard_UV.png
+rat_mob_RatGuard_UV.png::CompressedTexture2D/CompressedTexture2D::8882125227025566186::1753864565::1753864566::1::::<><><>0<>0<>7e951ce6ec1153980e9cbeb3dc1caa8e<>res://.godot/imported/rat_mob_RatGuard_UV.png-57263c644b6eb1aaeb0d90c60b593bd0.s3tc.ctex<*>res://.godot/imported/rat_mob_RatGuard_UV.png-57263c644b6eb1aaeb0d90c60b593bd0.etc2.ctex::
+SewerWall.glb::PackedScene/PackedScene::5192761213507363326::1753870583::1753870584::1::::<><><>0<>0<>09d928e35e0debe88372ea2f70972079<>res://.godot/imported/SewerWall.glb-17b43caaa043750b9e73369eaed5d2a0.scn::uid://cfkd721k21wlp::::res://Assets/MAIN FILES/SewerWall_Wall_texture.png<>uid://bwrjopmr50dg8::::res://Assets/MAIN FILES/SewerWall_Wall_texture_Normal.png
+SewerWall.tscn::PackedScene/PackedScene::2724851458287295286::1753818083::0::1::::<><><>0<>0<><>::uid://cfkd721k21wlp::::res://Assets/MAIN FILES/SewerWall_Wall_texture.png<>uid://bwrjopmr50dg8::::res://Assets/MAIN FILES/SewerWall_Wall_texture_Normal.png
+SewerWall_Wall_texture.png::CompressedTexture2D/CompressedTexture2D::5144670118287069597::1753754972::1753870584::1::::<><><>0<>0<>ee249f1e73cb7e18b41073db6c8cd325<>res://.godot/imported/SewerWall_Wall_texture.png-7a0b7633b0d18e696bf76110fa754c56.s3tc.ctex<*>res://.godot/imported/SewerWall_Wall_texture.png-7a0b7633b0d18e696bf76110fa754c56.etc2.ctex::
+SewerWall_Wall_texture_Normal.png::CompressedTexture2D/CompressedTexture2D::3966241926799780161::1753754972::1753870584::1::::<><><>0<>0<>2b1693eec9ca5092ea5ee95ef22f46b5<>res://.godot/imported/SewerWall_Wall_texture_Normal.png-9495d9aa9c0c926247527f769075d838.s3tc.ctex<*>res://.godot/imported/SewerWall_Wall_texture_Normal.png-9495d9aa9c0c926247527f769075d838.etc2.ctex::
 Spikes.tscn::PackedScene/PackedScene::4800158240101089173::1753746889::0::1::::<><><>0<>0<><>::uid://ccyl6pw121k27::::res://Assets/MAIN FILES/Wood Texture.png
 Torch.glb::PackedScene/PackedScene::5821154833119483363::1753805676::1753805676::1::::<><><>0<>0<>1ccee97b40c2a95bf11d5e38d36b0ce3<>res://.godot/imported/Torch.glb-7edab7ad1a1131c07d20971a2247a96b.scn::uid://b8koviu5d5v5o::::res://Assets/MAIN FILES/Torch_Cylinder Base Color.png
 Torch.tscn::PackedScene/PackedScene::3954423091741750923::1753799325::0::1::::<><><>0<>0<><>::uid://b8koviu5d5v5o::::res://Assets/MAIN FILES/Torch_Cylinder Base Color.png
 Torch_Cylinder Base Color.png::CompressedTexture2D/CompressedTexture2D::4724184293310666430::1753799198::1753799199::1::::<><><>0<>0<>bf0a6feb51cfb6d41ff6265967d79cf5<>res://.godot/imported/Torch_Cylinder Base Color.png-c3af114965295d28f7374db46d906a9e.s3tc.ctex<*>res://.godot/imported/Torch_Cylinder Base Color.png-c3af114965295d28f7374db46d906a9e.etc2.ctex::
-water_mat.tres::ShaderMaterial::6035643967697850451::1753821998::0::1::::<><><>0<>0<><>::res://resources/Shaders/water/ocean.gdshader
+water_mat.tres::ShaderMaterial/ShaderMaterial::6035643967697850451::1753821998::0::1::::<><><>0<>0<><>::res://resources/Shaders/water/ocean.gdshader
 Wood Texture.png::CompressedTexture2D/CompressedTexture2D::4963488190345570206::1753744741::1753744758::1::::<><><>0<>0<>739a6d0dd2bc079ddff2cda60d401c64<>res://.godot/imported/Wood Texture.png-3a43578a3b6f03424646865898f4d7c4.s3tc.ctex<*>res://.godot/imported/Wood Texture.png-3a43578a3b6f03424646865898f4d7c4.etc2.ctex::
 ::res://Assets/RatKnightGirl/::1743679850
 Ratknightgirl(2).glb::PackedScene/PackedScene::5606812482896016686::1743677673::1743679837::1::::<><><>0<>0<>0a1b469b6e1f26f45beb80f34d07137c<>res://.godot/imported/Ratknightgirl(2).glb-edfda752ee476705082e442c11367b5a.scn::uid://hrb2r1uleej5::::res://Assets/RatKnightGirl/Ratknightgirl(2)_barbarian_texture.png<>uid://bdl2e4wtuvj1s::::res://Assets/RatKnightGirl/Ratknightgirl(2)_Hair.png<>uid://y70u0xlbig41::::res://Assets/RatKnightGirl/Ratknightgirl(2)_Skin.png<>uid://bw082trwwuwsl::::res://Assets/RatKnightGirl/Ratknightgirl(2)_Armor.png
@@ -420,19 +423,19 @@ Ratknightgirl_Hair.png::CompressedTexture2D/CompressedTexture2D::550479243460932
 Ratknightgirl_Skin.png::CompressedTexture2D/CompressedTexture2D::187960091885593692::1743679837::1743679850::1::::<><><>0<>0<>3d28bd979e516787fc57fc087fc7ca9c<>res://.godot/imported/Ratknightgirl_Skin.png-e50b1282f4cf63b6089e04258bba05cd.s3tc.ctex<*>res://.godot/imported/Ratknightgirl_Skin.png-e50b1282f4cf63b6089e04258bba05cd.etc2.ctex::
 ::res://Assets/Textures/::1743550367
 hexagons_medieval.png::CompressedTexture2D/CompressedTexture2D::3140972580007175817::1743549906::1743550367::1::::<><><>0<>0<>a9ebf1fda88b1b2d1444b7a3877cb6e3<>res://.godot/imported/hexagons_medieval.png-163ba76b3b0ede29b241edaa603fa26a.ctex::
-::res://Decorations/::1753822631
-Decoration2-1.tscn::PackedScene::4453734182259474867::1753822630::0::1::::<><><>0<>0<><>::uid://be2651wk6yqd7::::res://Assets/MAIN FILES/SewerWall.tscn<>uid://cvkxwylovjdse::::res://Decorations/sewerwater.gdshader<>uid://co62tmql4l836::::res://Assets/MAIN FILES/Torch.glb<>uid://r144ejup4ed7::::res://Assets/MAIN FILES/ocean.gdshader
-sewerwater.gdshader::Shader::6268887917842785164::1753822631::0::1::::<><><>0<>0<><>::
-Water_test.gdshader::Shader::4708517955192019714::1753822631::0::1::::<><><>0<>0<><>::
-::res://LVLS/::1753820314
-Lvl_1.tscn::PackedScene/PackedScene::5705806041255018389::1753809848::0::1::::<><><>0<>0<><>::uid://dyvbs62im41bw::::res://Assets/MAIN FILES/Platform.tscn<>uid://lyuoq2oddkur::::res://Assets/MAIN FILES/PlatformwithBridge.tscn<>uid://bvm0wju6fqffh::::res://Assets/MAIN FILES/BreakableObstackle.tscn<>uid://canh51cj454b6::::res://Assets/MAIN FILES/Spikes.tscn
+::res://Decorations/::1753870165
+Decoration2-1.tscn::PackedScene/PackedScene::4453734182259474867::1753868343::0::1::::<><><>0<>0<><>::uid://be2651wk6yqd7::::res://Assets/MAIN FILES/SewerWall.tscn<>uid://cvkxwylovjdse::::res://Decorations/sewerwater.gdshader<>uid://co62tmql4l836::::res://Assets/MAIN FILES/Torch.glb<>uid://r144ejup4ed7::::res://Assets/MAIN FILES/ocean.gdshader
+sewerwater.gdshader::Shader::6268887917842785164::1753870165::0::1::::<><><>0<>0<><>::
+Water_test.gdshader::Shader::4708517955192019714::1753870165::0::1::::<><><>0<>0<><>::
+::res://LVLS/::1753868344
+Lvl_1.tscn::PackedScene/PackedScene::5705806041255018389::1753868344::0::1::::<><><>0<>0<><>::uid://dyvbs62im41bw::::res://Assets/MAIN FILES/Platform.tscn<>uid://lyuoq2oddkur::::res://Assets/MAIN FILES/PlatformwithBridge.tscn<>uid://bvm0wju6fqffh::::res://Assets/MAIN FILES/BreakableObstackle.tscn<>uid://canh51cj454b6::::res://Assets/MAIN FILES/Spikes.tscn
 Obstackles_Wood Texture.png::CompressedTexture2D/CompressedTexture2D::5298243270123723040::1753740588::1753740588::1::::<><><>0<>0<>78be6ff4a53e51c52f85951ec3fec030<>res://.godot/imported/Obstackles_Wood Texture.png-05afb1e688bd7056648b5e82c06d74c1.s3tc.ctex<*>res://.godot/imported/Obstackles_Wood Texture.png-05afb1e688bd7056648b5e82c06d74c1.etc2.ctex::
 Water_2.gdshader::Shader/Shader::8638041332978350785::1753820314::0::1::::<><><>0<>0<><>::
-::res://Obstacles/::1753749551
+::res://Obstacles/::1753868344
 Blocks.tscn::PackedScene/PackedScene::2854725861321878329::1753749551::0::1::::<><><>0<>0<><>::
-ConesBlock.tscn::PackedScene/PackedScene::8207202879353843608::1753749551::0::1::::<><><>0<>0<><>::
-::res://terrains/::1753749551
-terrain2.tscn::PackedScene/PackedScene::5676503067258161661::1753749551::0::1::::<><><>0<>0<><>::uid://chkbgj0im1nm4::::res://terrains/terrain_2.gd
+ConesBlock.tscn::PackedScene/PackedScene::8207202879353843608::1753868344::0::1::::<><><>0<>0<><>::
+::res://terrains/::1753868344
+terrain2.tscn::PackedScene/PackedScene::5676503067258161661::1753868344::0::1::::<><><>0<>0<><>::uid://chkbgj0im1nm4::::res://terrains/terrain_2.gd
 terrain.gd::GDScript/GDScript::2089591815528597128::1743677673::0::1::::<>MeshInstance3D<><>0<>0<><>::
-terrain.tscn::PackedScene/PackedScene::6122323392622476194::1753749551::0::1::::<><><>0<>0<><>::uid://41hjildhhh2o::::res://terrains/terrain.gd
+terrain.tscn::PackedScene/PackedScene::6122323392622476194::1753868344::0::1::::<><><>0<>0<><>::uid://41hjildhhh2o::::res://terrains/terrain.gd
 terrain_2.gd::GDScript/GDScript::5284878993860040889::1753740112::0::1::::<>MeshInstance3D<><>0<>0<><>::
