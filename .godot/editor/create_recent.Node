@@ -1,5 +1,8 @@
-CollisionShape3D
+SpotLight3D
+OmniLight3D
 MeshInstance3D
+GPUParticles3D
+CollisionShape3D
 Area3D
 Button
 Timer
@@ -10,5 +13,3 @@ StaticBody3D
 CSGBox3D
 CSGMesh3D
 Node3D
-AnimationTree
-RayCast3D

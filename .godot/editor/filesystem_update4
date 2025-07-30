@@ -1,17 +1,13 @@
+res://Decorations/sewerwater.gdshader
+res://Assets/MAIN FILES/ocean.gdshader
+res://Decorations/Water_test.gdshader
+res://Assets/MAIN FILES/rat_mob.tscn
+res://Assets/MAIN FILES/rat_mob.gdshader
 res://player.tscn
-res://Decorations/Decoration2.tscn
-res://Decorations/Decoration1.tscn
 res://trampoline.tscn
 res://enemy.tscn
-res://Assets/Decoration2.tscn
-res://Assets/Decoration1.tscn
-res://LVLS/Lvl_1.tscn
 res://Decorations/Decoration2-1.tscn
-res://Assets/MAIN FILES/Platform.glb
-res://Assets/MAIN FILES/PlatformwithBridge.tscn
-res://Assets/MAIN FILES/Spikes.tscn
-res://Obstacles/Blocks.tscn
+res://LVLS/Lvl_1.tscn
 res://Obstacles/ConesBlock.tscn
 res://terrains/terrain2.tscn
 res://terrains/terrain.tscn
-res://Assets/MAIN FILES/SewerWall.tscn

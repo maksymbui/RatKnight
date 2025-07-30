@@ -1,8 +1,8 @@
 [gd_scene load_steps=11 format=4 uid="uid://cnj616nxonugr"]
 
-[ext_resource type="PackedScene" uid="uid://bip4mdok5nto4" path="res://Assets/MAIN FILES/BreakableObstackle.glb" id="1_j0bm3"]
 [ext_resource type="PackedScene" uid="uid://dyvbs62im41bw" path="res://Assets/MAIN FILES/Platform.tscn" id="2_rvqvh"]
 [ext_resource type="PackedScene" uid="uid://lyuoq2oddkur" path="res://Assets/MAIN FILES/PlatformwithBridge.tscn" id="3_b7i8m"]
+[ext_resource type="PackedScene" uid="uid://bvm0wju6fqffh" path="res://Assets/MAIN FILES/BreakableObstackle.tscn" id="4_j0bm3"]
 [ext_resource type="PackedScene" uid="uid://canh51cj454b6" path="res://Assets/MAIN FILES/Spikes.tscn" id="4_p0eo0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kehga"]
@@ -94,18 +94,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95297, 0.01, 0)
 mesh = SubResource("ArrayMesh_5caid")
 skeleton = NodePath("")
 
-[node name="BreakableObstackle" parent="." instance=ExtResource("1_j0bm3")]
-transform = Transform3D(1.69, 0, 0, 0, 1.69, 0, 0, 0, 1.69, 0, 3.33358, 4.20847)
-
-[node name="BreakableObstackle2" parent="." instance=ExtResource("1_j0bm3")]
-transform = Transform3D(1.69, 0, 0, 0, 1.69, 0, 0, 0, 1.69, 2.97716, -0.0194435, 4.20847)
-
-[node name="BreakableObstackle3" parent="." instance=ExtResource("1_j0bm3")]
-transform = Transform3D(1.69, 0, 0, 0, 1.69, 0, 0, 0, 1.69, -2.94167, -0.0194435, 4.20847)
-
-[node name="BreakableObstackle4" parent="." instance=ExtResource("1_j0bm3")]
-transform = Transform3D(1.69, 0, 0, 0, 1.69, 0, 0, 0, 1.69, -2.91405, 0.0240602, -10.4555)
-
 [node name="Platform" parent="." instance=ExtResource("2_rvqvh")]
 transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, 0, 5.64923)
 
@@ -138,3 +126,15 @@ transform = Transform3D(2.13, 0, 0, 0, 2.045, 0, 0, 0, 1.8, -0.220961, 0, -35.14
 
 [node name="Spikes3" parent="." instance=ExtResource("4_p0eo0")]
 transform = Transform3D(2.13, 0, 0, 0, 2.045, 0, 0, 0, 1.8, -2.86789, 0, -35.1486)
+
+[node name="BreakableObstackle5" parent="." instance=ExtResource("4_j0bm3")]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 3.21639, -0.218363)
+
+[node name="BreakableObstackle6" parent="." instance=ExtResource("4_j0bm3")]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, -2.88517, -0.030517, -0.218363)
+
+[node name="BreakableObstackle8" parent="." instance=ExtResource("4_j0bm3")]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, -2.88517, -0.030517, -13.4812)
+
+[node name="BreakableObstackle7" parent="." instance=ExtResource("4_j0bm3")]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 2.99282, -0.030517, -0.218363)

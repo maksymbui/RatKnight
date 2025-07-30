@@ -13,6 +13,8 @@ normal_scale = 1.2
 normal_texture = ExtResource("2_1i1nc")
 uv1_scale = Vector3(6.165, 3.65, 1)
 uv1_offset = Vector3(-5, 2, 0)
+uv1_triplanar_sharpness = 0.406126
+uv1_world_triplanar = true
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_8s07l"]
 _surfaces = [{
@@ -243,7 +245,7 @@ normal_enabled = true
 normal_scale = 1.2
 normal_texture = ExtResource("2_1i1nc")
 uv1_scale = Vector3(21.21, 8.423, 1.116)
-uv1_offset = Vector3(-31, 0.400001, 0)
+uv1_offset = Vector3(-30.985, 0.415, 0)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_g27pe"]
 _surfaces = [{

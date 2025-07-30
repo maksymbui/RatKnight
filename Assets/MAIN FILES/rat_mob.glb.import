@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bip4mdok5nto4"
-path="res://.godot/imported/BreakableObstackle.glb-32d37028d41314156e823ef66c628942.scn"
+uid="uid://bsuf8skmpm65n"
+path="res://.godot/imported/rat_mob.glb-60f56f951e95cee88b28c2a8edfc0575.scn"
 
 [deps]
 
-source_file="res://Assets/MAIN FILES/BreakableObstackle.glb"
-dest_files=["res://.godot/imported/BreakableObstackle.glb-32d37028d41314156e823ef66c628942.scn"]
+source_file="res://Assets/MAIN FILES/rat_mob.glb"
+dest_files=["res://.godot/imported/rat_mob.glb-60f56f951e95cee88b28c2a8edfc0575.scn"]
 
 [params]
 
