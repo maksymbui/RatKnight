@@ -5,6 +5,7 @@ var target_lane: int = 1
 var LANES: Array = [-3, 0, 3]
 var gravity_pull: float = 30
 var jump_velocity: float = 11.5
+var max_z: float = 0
 var target_velocity: Vector3 = Vector3.ZERO
 var state: String = "run"
 
@@ -41,9 +42,9 @@ func _physics_process(delta: float) -> void:
 			
 		#Jumping
 		if Input.is_action_just_pressed("ui_up") and is_on_floor() and state != "stop":
+			state = "jump"
 			if state == "attack":
 				$Attack.stop()
-				state = "run"
 			target_velocity.y = jump_velocity
 		
 		var target_x: float = LANES[target_lane]
@@ -51,6 +52,9 @@ func _physics_process(delta: float) -> void:
 		global_transform.origin.x = lerp(current_x, target_x, MOVE_SPEED * delta)
 		velocity = target_velocity
 		
+		if (global_transform.origin.z) > 0:
+			global_transform.origin.z = 0
+			
 	#Controlling animations and GravityPull
 	if state == "attack":
 		$AnimationPlayer.play("Attack")
@@ -63,7 +67,9 @@ func _physics_process(delta: float) -> void:
 			$AnimationPlayer.play("Strafe Left")
 		if state == "right":
 			$AnimationPlayer.play("StrafeRight")
-
+		if state == "jump":
+			state = "run"
+			
 		if(target_velocity.y < -4):
 			target_velocity.y = -4
 	else:
@@ -84,11 +90,6 @@ func _physics_process(delta: float) -> void:
 			$Strafe.stop()
 			$Attack.stop()
 			hit.emit()
-
-	if (position.y > 0.3 and position.y < 5.56 and is_on_floor()):
-		target_velocity.z = -4
-	else:
-		target_velocity.z = 0
 	
 	#Attack system
 	var collider = $rig/Skeleton3D/axe_2handed/Axe/RayCast3D.get_collider()

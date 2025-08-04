@@ -19,6 +19,7 @@ func _process(delta: float) -> void:
 	env.fog_light_color = fog_current_color
 
 func _on_player_hit() -> void:
+
 	get_tree().reload_current_scene()
 	$TerrainController._stop_gen()
 	if end_game == false:

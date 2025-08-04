@@ -107,10 +107,10 @@ transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, 0, -2.83386)
 transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, 0, -7.02886)
 
 [node name="Platform4" parent="." instance=ExtResource("2_rvqvh")]
-transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 2.86069, 0, -13.2624)
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0.0433064, 0, -11.0294)
 
 [node name="Platform5" parent="." instance=ExtResource("2_rvqvh")]
-transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 2.86069, 0, -17.4191)
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0.0433064, 0, -15.1861)
 
 [node name="PlatformwithBridge" parent="." instance=ExtResource("3_b7i8m")]
 transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -0.0265827, -4.76837e-07, 9.73676)
@@ -134,7 +134,7 @@ transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, -2.95077, -0.030517, -0
 transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, -2.86966, -0.030517, -13.479)
 
 [node name="BreakableObstackle3" parent="." instance=ExtResource("5_rvqvh")]
-transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, -0.00929236, 3.20455, -0.218363)
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 7.41386, 3.20455, -0.218363)
 
 [node name="BreakableObstackle2" parent="." instance=ExtResource("5_rvqvh")]
 transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 2.99282, -0.030517, -0.218363)
