@@ -9,14 +9,16 @@
 sky_horizon_color = Color(0.601082, 0.835968, 0.90693, 1)
 ground_bottom_color = Color(0.544934, 0.642263, 0.703644, 1)
 
-[sub_resource type="Sky" id="Sky_840qy"]
+[sub_resource type="Sky" id="Sky_plmkv"]
 sky_material = SubResource("ProceduralSkyMaterial_brry2")
 
 [sub_resource type="Environment" id="Environment_pxu6x"]
 background_mode = 1
-sky = SubResource("Sky_840qy")
+background_energy_multiplier = 0.91
+sky = SubResource("Sky_plmkv")
 ambient_light_source = 3
-ambient_light_sky_contribution = 0.94
+ambient_light_color = Color(0.158472, 0.158472, 0.158472, 1)
+ambient_light_sky_contribution = 0.54
 tonemap_mode = 4
 tonemap_exposure = 0.9
 adjustment_enabled = true
@@ -130,35 +132,89 @@ size = Vector2(50, 100)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_pxu6x")
 
-[node name="Torch" parent="." instance=ExtResource("3_plmkv")]
-transform = Transform3D(0.205, 0, 0, 0, 0.205, 0, 0, 0, 0.205, -18.8049, 3.01865, -11.5545)
+[node name="Torch_R_1" parent="." instance=ExtResource("3_plmkv")]
+transform = Transform3D(0.205, 0, 0, 0, 0.205, 0, 0, 0, 0.205, -19.3232, 3.01865, -37.4832)
 
-[node name="Torch4" parent="." instance=ExtResource("3_plmkv")]
-transform = Transform3D(0.205, 0, 0, 0, 0.205, 0, 0, 0, 0.205, -18.8049, 3.01865, -37.4832)
+[node name="Torch_R_2" parent="." instance=ExtResource("3_plmkv")]
+transform = Transform3D(0.205, 0, 0, 0, 0.205, 0, 0, 0, 0.205, -19.3232, 3.01865, -11.5545)
 
-[node name="Torch2" parent="." instance=ExtResource("3_plmkv")]
-transform = Transform3D(0.205, 0, 0, 0, 0.205, 0, 0, 0, 0.205, -18.8049, 3.01865, 13.3273)
+[node name="Torch_R_3" parent="." instance=ExtResource("3_plmkv")]
+transform = Transform3D(0.205, 0, 0, 0, 0.205, 0, 0, 0, 0.205, -19.3232, 3.01865, 13.3273)
 
-[node name="Torch3" parent="." instance=ExtResource("3_plmkv")]
-transform = Transform3D(0.205, 0, 0, 0, 0.205, 0, 0, 0, 0.205, -18.8049, 3.01865, 37.9538)
+[node name="Torch_R_4" parent="." instance=ExtResource("3_plmkv")]
+transform = Transform3D(0.205, 0, 0, 0, 0.205, 0, 0, 0, 0.205, -19.3232, 3.01865, 37.9538)
 
-[node name="Torch5" parent="." instance=ExtResource("3_plmkv")]
-transform = Transform3D(-0.205, 0, 1.79217e-08, 0, 0.205, 0, -1.79217e-08, 0, -0.205, 19.1783, 2.08454, 12.6762)
+[node name="Torch_L_1" parent="." instance=ExtResource("3_plmkv")]
+transform = Transform3D(-0.205, 0, 1.79217e-08, 0, 0.205, 0, -1.79217e-08, 0, -0.205, 19.3956, 2.08454, 38.6049)
 
-[node name="Torch6" parent="." instance=ExtResource("3_plmkv")]
-transform = Transform3D(-0.205, 0, 1.79217e-08, 0, 0.205, 0, -1.79217e-08, 0, -0.205, 19.1783, 2.08454, 38.6049)
+[node name="Torch_L_2" parent="." instance=ExtResource("3_plmkv")]
+transform = Transform3D(-0.205, 0, 1.79217e-08, 0, 0.205, 0, -1.79217e-08, 0, -0.205, 19.3956, 2.08454, 12.6762)
 
-[node name="Torch7" parent="." instance=ExtResource("3_plmkv")]
-transform = Transform3D(-0.205, 0, 1.79217e-08, 0, 0.205, 0, -1.79217e-08, 0, -0.205, 19.1783, 2.08454, -12.2056)
+[node name="Torch_L_3" parent="." instance=ExtResource("3_plmkv")]
+transform = Transform3D(-0.205, 0, 1.79217e-08, 0, 0.205, 0, -1.79217e-08, 0, -0.205, 19.3956, 2.08454, -12.2056)
 
-[node name="Torch8" parent="." instance=ExtResource("3_plmkv")]
-transform = Transform3D(-0.205, 0, 1.79217e-08, 0, 0.205, 0, -1.79217e-08, 0, -0.205, 19.1783, 2.08454, -36.8321)
+[node name="Torch_L_4" parent="." instance=ExtResource("3_plmkv")]
+transform = Transform3D(-0.205, 0, 1.79217e-08, 0, 0.205, 0, -1.79217e-08, 0, -0.205, 19.3956, 2.08454, -36.8321)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.00895377, -0.362587, 0.931907, -0.0314443, 0.931586, 0.362159, -0.999465, -0.0260605, -0.0197425, 32.245, 22.3765, 0.348619)
+visible = false
+light_color = Color(0.871928, 0.828942, 0.653562, 1)
+light_energy = 0.05
+light_bake_mode = 1
+shadow_bias = 0.04
+shadow_normal_bias = 1.581
+shadow_transmittance_bias = 0.0
+shadow_opacity = 0.55
+shadow_blur = 2.796
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.00895369, 0.362586, -0.931907, -0.0314443, 0.931586, 0.362159, 0.999465, 0.0260605, 0.0197424, -42.0705, 21.1751, 0.348619)
+visible = false
+light_color = Color(0.520543, 0.788268, 0.913273, 1)
+light_energy = 0.05
+light_bake_mode = 1
+
+[node name="LIghtCenter" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.547123, 9.60764, -45.7207)
+light_color = Color(0.899861, 0.847224, 0.737935, 1)
+light_energy = 10.157
+light_indirect_energy = 2.0
+light_size = 0.102
+omni_range = 21.708
+omni_attenuation = 1.479
+
+[node name="LIghtCenter2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.547123, 9.60764, -24.1409)
+light_color = Color(0.899861, 0.847224, 0.737935, 1)
+light_energy = 10.157
+light_indirect_energy = 2.0
+light_size = 0.102
+omni_range = 21.708
+omni_attenuation = 1.479
+
+[node name="LIghtCenter3" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.547123, 9.60764, -2.39387)
+light_color = Color(0.899861, 0.847224, 0.737935, 1)
+light_energy = 10.157
+light_indirect_energy = 2.0
+light_size = 0.102
+omni_range = 21.708
+omni_attenuation = 1.479
+
+[node name="LIghtCenter4" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.547123, 9.60764, 19.2841)
+light_color = Color(0.899861, 0.847224, 0.737935, 1)
+light_energy = 10.157
+light_indirect_energy = 2.0
+light_size = 0.102
+omni_range = 21.708
+omni_attenuation = 1.479
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4993, 6.33144, -11.5986)
 light_color = Color(0.748226, 0.65462, 0.475656, 1)
 light_energy = 3.694
-shadow_enabled = true
 omni_range = 25.0
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="."]
@@ -211,7 +267,16 @@ shadow_enabled = true
 omni_range = 25.0
 
 [node name="GPUParticles3D" type="GPUParticles3D" parent="."]
-transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, 19.3164, 4.57958, -12.213)
+transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, 19.5491, 4.57958, -12.213)
+amount = 50
+speed_scale = 0.7
+randomness = 0.4
+local_coords = true
+process_material = SubResource("ParticleProcessMaterial_g0kty")
+draw_pass_1 = SubResource("SphereMesh_gd0al")
+
+[node name="GPUParticles3D8" type="GPUParticles3D" parent="."]
+transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, 19.5491, 4.57958, -36.8026)
 amount = 50
 speed_scale = 0.7
 randomness = 0.4
@@ -220,7 +285,7 @@ process_material = SubResource("ParticleProcessMaterial_g0kty")
 draw_pass_1 = SubResource("SphereMesh_gd0al")
 
 [node name="GPUParticles3D2" type="GPUParticles3D" parent="."]
-transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, 19.3164, 4.57958, 12.6796)
+transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, 19.5491, 4.57958, 12.6796)
 amount = 50
 speed_scale = 0.7
 randomness = 0.4
@@ -229,7 +294,7 @@ process_material = SubResource("ParticleProcessMaterial_g0kty")
 draw_pass_1 = SubResource("SphereMesh_gd0al")
 
 [node name="GPUParticles3D3" type="GPUParticles3D" parent="."]
-transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, 19.3164, 4.57958, 38.6255)
+transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, 19.5491, 4.57958, 38.6255)
 amount = 50
 speed_scale = 0.7
 randomness = 0.4
@@ -238,7 +303,7 @@ process_material = SubResource("ParticleProcessMaterial_g0kty")
 draw_pass_1 = SubResource("SphereMesh_gd0al")
 
 [node name="GPUParticles3D4" type="GPUParticles3D" parent="."]
-transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, -18.929, 5.52993, 13.2949)
+transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, -19.505, 5.52993, 13.2949)
 amount = 50
 speed_scale = 0.7
 randomness = 0.4
@@ -247,7 +312,7 @@ process_material = SubResource("ParticleProcessMaterial_g0kty")
 draw_pass_1 = SubResource("SphereMesh_gd0al")
 
 [node name="GPUParticles3D5" type="GPUParticles3D" parent="."]
-transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, -18.929, 5.52993, -11.559)
+transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, -19.505, 5.52993, -11.559)
 amount = 50
 speed_scale = 0.7
 randomness = 0.4
@@ -256,7 +321,7 @@ process_material = SubResource("ParticleProcessMaterial_g0kty")
 draw_pass_1 = SubResource("SphereMesh_gd0al")
 
 [node name="GPUParticles3D6" type="GPUParticles3D" parent="."]
-transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, -18.929, 5.52993, -37.5186)
+transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, -19.505, 5.52993, -37.5186)
 amount = 50
 speed_scale = 0.7
 randomness = 0.4
@@ -265,7 +330,7 @@ process_material = SubResource("ParticleProcessMaterial_g0kty")
 draw_pass_1 = SubResource("SphereMesh_gd0al")
 
 [node name="GPUParticles3D7" type="GPUParticles3D" parent="."]
-transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, -18.9289, 5.55142, 37.9201)
+transform = Transform3D(1.00305, 0, 0, 0, 1.00305, 0, 0, 0, 1.00305, -19.5049, 5.55142, 37.9201)
 amount = 50
 speed_scale = 0.7
 randomness = 0.4

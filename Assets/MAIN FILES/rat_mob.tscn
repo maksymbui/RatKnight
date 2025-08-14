@@ -1,12 +1,13 @@
-[gd_scene load_steps=6 format=4 uid="uid://cgujuhxpsittu"]
+[gd_scene load_steps=6 format=4 uid="uid://dnps3bvc3ymdw"]
 
-[ext_resource type="Texture2D" uid="uid://dystkmlvxwc8a" path="res://Assets/MAIN FILES/rat_mob_RatGuard_UV.png" id="1_cplmw"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_thi3o"]
+load_path = "res://.godot/imported/rat_mob_RatGuard_UV.png-57263c644b6eb1aaeb0d90c60b593bd0.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ap267"]
 resource_name = "RatGuard_UV"
 diffuse_mode = 3
 specular_mode = 1
-albedo_texture = ExtResource("1_cplmw")
+albedo_texture = SubResource("CompressedTexture2D_thi3o")
 metallic_specular = 0.46
 emission_enabled = true
 ao_enabled = true
@@ -18,7 +19,7 @@ grow_amount = 0.209
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6uod7"]
 resource_name = "Material"
 cull_mode = 2
-albedo_texture = ExtResource("1_cplmw")
+albedo_texture = SubResource("CompressedTexture2D_thi3o")
 metallic = 0.4
 roughness = 0.803636
 

@@ -1,8 +1,9 @@
+DirectionalLight3D
+OmniLight3D
+SpotLight3D
 CollisionShape3D
 StaticBody3D
 MeshInstance3D
-SpotLight3D
-OmniLight3D
 GPUParticles3D
 Area3D
 Button

@@ -97,6 +97,12 @@ skeleton = NodePath("")
 [node name="Platform" parent="." instance=ExtResource("2_rvqvh")]
 transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, 0, 5.64923)
 
+[node name="Platform9" parent="." instance=ExtResource("2_rvqvh")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 3, 0, 31.6492)
+
+[node name="Platform10" parent="." instance=ExtResource("2_rvqvh")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, 0, 31.6492)
+
 [node name="Platform2" parent="." instance=ExtResource("2_rvqvh")]
 transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, 0, 1.58939)
 
@@ -112,11 +118,29 @@ transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0.0433064, 0, -11.0294)
 [node name="Platform5" parent="." instance=ExtResource("2_rvqvh")]
 transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0.0433064, 0, -15.1861)
 
+[node name="Platform7" parent="." instance=ExtResource("2_rvqvh")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 3.04331, 0, -33.1861)
+
+[node name="Platform8" parent="." instance=ExtResource("2_rvqvh")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 3.04331, 0, -37.1861)
+
 [node name="PlatformwithBridge" parent="." instance=ExtResource("3_b7i8m")]
 transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -0.0265827, -4.76837e-07, 9.73676)
 
+[node name="PlatformwithBridge2" parent="." instance=ExtResource("3_b7i8m")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -0.0265827, -4.76837e-07, 9.73676)
+
 [node name="Spikes" parent="." instance=ExtResource("4_p0eo0")]
-transform = Transform3D(2.13, 0, 0, 0, 2.045, 0, 0, 0, 1.8, 0, 0, 21.1316)
+transform = Transform3D(2.13, 0, 0, 0, 2.045, 0, 0, 0, 1.8, 0.0262575, 0, 21.1316)
+
+[node name="Spikes6" parent="." instance=ExtResource("4_p0eo0")]
+transform = Transform3D(2.13, 0, 0, 0, 2.045, 0, 0, 0, 1.8, -2.97374, 0, 21.1316)
+
+[node name="Spikes5" parent="." instance=ExtResource("4_p0eo0")]
+transform = Transform3D(2.13, 0, 0, 0, 2.045, 0, 0, 0, 1.8, 3.02626, 0, 21.1316)
+
+[node name="Spikes7" parent="." instance=ExtResource("4_p0eo0")]
+transform = Transform3D(2.13, 0, 0, 0, 2.045, 0, 0, 0, 1.8, 3.02626, 0, -14.8684)
 
 [node name="Spikes2" parent="." instance=ExtResource("4_p0eo0")]
 transform = Transform3D(2.13, 0, 0, 0, 2.045, 0, 0, 0, 1.8, -0.220961, 0, -35.1486)
@@ -132,9 +156,6 @@ transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, -2.95077, -0.030517, -0
 
 [node name="BreakableObstackle4" parent="." instance=ExtResource("5_rvqvh")]
 transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, -2.86966, -0.030517, -13.479)
-
-[node name="BreakableObstackle3" parent="." instance=ExtResource("5_rvqvh")]
-transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 7.41386, 3.20455, -0.218363)
 
 [node name="BreakableObstackle2" parent="." instance=ExtResource("5_rvqvh")]
 transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 2.99282, -0.030517, -0.218363)
